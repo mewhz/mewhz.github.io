@@ -2,7 +2,6 @@
 title: 实现简单的前后端分离
 tags:
   - Java
-abbrlink: fa02d6fc
 date: 2021-12-31 12:11:51
 ---
 

@@ -3,7 +3,6 @@ title: mysql修改主键乱序指令
 tags:
   - MySQL
 readmore: true
-abbrlink: 8db5399a
 date: 2022-01-28 18:25:20
 ---
 

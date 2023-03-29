@@ -2,7 +2,6 @@
 title: JavaScript导入本地JS文件中的函数
 tags:
   - JavaScript
-abbrlink: 8319c694
 date: 2022-01-02 00:30:39
 ---
 

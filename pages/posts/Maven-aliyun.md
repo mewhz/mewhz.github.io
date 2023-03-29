@@ -3,7 +3,6 @@ title: 修改Maven仓库为阿里云
 tags:
   - Java
   - Maven
-abbrlink: 48cbe066
 date: 2021-11-24 00:33:01
 ---
 

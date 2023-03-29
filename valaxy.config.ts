@@ -38,22 +38,25 @@ export default defineValaxyConfig<UserThemeConfig>({
       colors: ["#F73859", "#14FFEC", "#00E0FF", "#FF99FE", "#FAF15D"],
     },
 
-    pages: [
-      {
-        name: '我的小伙伴们',
-        url: '/links/',
-        icon: 'i-ri-genderless-line',
-        color: 'dodgerblue',
-      },
-    ],
+    pages: [],
 
     footer: {
       since: 2019,
+      powered: true,
       beian: {
         enable: true,
         icp: '冀ICP备19018681号',
       },
     },
+
+    menu: {
+      custom: {
+        title: '小伙伴们',
+        url: '/links/',
+        icon: 'i-ri-genderless-line',
+      }
+    },
+
   },
 
   unocss: { safelist },

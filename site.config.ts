@@ -1,6 +1,8 @@
 import { defineSiteConfig } from 'valaxy'
 
 export default defineSiteConfig({
+
+
   url: 'https://mewhz.com/',
   lang: 'zh-CN',
   // 标题
@@ -9,7 +11,12 @@ export default defineSiteConfig({
     // 名称
     name: '星落',
     // 头像
-    avatar: 'https://avatars.githubusercontent.com/u/48837161'
+    avatar: 'https://avatars.githubusercontent.com/u/48837161',
+    // 状态
+    status: {
+      emoji: '✨',
+      message: '开开心心~'
+    }
   },
   // 副标题
   subtitle: '',
@@ -47,8 +54,20 @@ export default defineSiteConfig({
       },
     },
   },
+  search: {
+    enable: true,
+    // 设置类型为 Fuse
+    type: 'fuse',
+  },
   // 放大图片
   mediumZoom: {
     enable: true
   },
+  // 赞助
+  sponsor: {
+    enable: false,
+  },
+
+
+  
 })

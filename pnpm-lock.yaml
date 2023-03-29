@@ -4,6 +4,9 @@ dependencies:
   valaxy:
     specifier: 0.14.21
     version: registry.npmmirror.com/valaxy@0.14.21(@types/markdown-it@12.2.3)(@unhead/vue@1.1.25)(postcss@8.4.21)(typescript@4.8.4)
+  valaxy-addon-components:
+    specifier: ^0.0.1
+    version: registry.npmmirror.com/valaxy-addon-components@0.0.1
   valaxy-theme-yun:
     specifier: 0.14.21
     version: registry.npmmirror.com/valaxy-theme-yun@0.14.21(valaxy@0.14.21)
@@ -3881,6 +3884,12 @@ packages:
     dependencies:
       querystringify: registry.npmmirror.com/querystringify@2.2.0
       requires-port: registry.npmmirror.com/requires-port@1.0.0
+    dev: false
+
+  registry.npmmirror.com/valaxy-addon-components@0.0.1:
+    resolution: {integrity: sha512-460ObcDPh19j1wZMU+rTDoWpC9EbqfzEr/kfUFdraJRNv/ZSOn0TjP72FmamQ/21fY/Vb+U4/y+dJbUFUodQgA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/valaxy-addon-components/-/valaxy-addon-components-0.0.1.tgz}
+    name: valaxy-addon-components
+    version: 0.0.1
     dev: false
 
   registry.npmmirror.com/valaxy-addon-waline@0.1.0(valaxy@0.14.21):
