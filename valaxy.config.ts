@@ -17,10 +17,25 @@ export default defineValaxyConfig<UserThemeConfig>({
   themeConfig: {
     banner: {
       enable: true,
-      title: '云游君的小站',
+      title: '某星落的博客',
       cloud: {
         enable: true,
       },
+    },
+
+    bg_image : {
+      enable: true,
+      url: 'https://pic.mewhz.com/img/bg.jpg',
+      opacity: 0.2,
+    },
+
+    colors: {
+      primary: '#73D7F8'
+    },
+
+    fireworks : {
+      enable: true,
+      colors: ["#F73859", "#14FFEC", "#00E0FF", "#FF99FE", "#FAF15D"],
     },
 
     pages: [
@@ -30,19 +45,13 @@ export default defineValaxyConfig<UserThemeConfig>({
         icon: 'i-ri-genderless-line',
         color: 'dodgerblue',
       },
-      {
-        name: '喜欢的女孩子',
-        url: '/girls/',
-        icon: 'i-ri-women-line',
-        color: 'hotpink',
-      },
     ],
 
     footer: {
-      since: 2016,
+      since: 2019,
       beian: {
         enable: true,
-        icp: '苏ICP备17038157号',
+        icp: '冀ICP备19018681号',
       },
     },
   },

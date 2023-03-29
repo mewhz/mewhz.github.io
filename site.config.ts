@@ -1,120 +1,54 @@
 import { defineSiteConfig } from 'valaxy'
 
 export default defineSiteConfig({
-  url: 'https://valaxy.site/',
+  url: 'https://mewhz.com/',
   lang: 'zh-CN',
-  title: 'Valaxy Theme Yun',
+  // 标题
+  title: '某星落的博客',
   author: {
-    name: '云游君',
+    // 名称
+    name: '星落',
+    // 头像
+    avatar: 'https://avatars.githubusercontent.com/u/48837161'
   },
-  description: 'Valaxy Theme Yun Preview.',
+  // 副标题
+  subtitle: '',
+  // 主标题
+  description: '真正的大师永远都怀着一颗学徒的心',
+  // 站点图标
+  favicon: 'https://pic.mewhz.com/img/favicon.ico',
+  // 社交图标
   social: [
     {
-      name: 'RSS',
-      link: '/atom.xml',
-      icon: 'i-ri-rss-line',
-      color: 'orange',
-    },
-    {
-      name: 'QQ 群 1050458482',
-      link: 'https://qm.qq.com/cgi-bin/qm/qr?k=kZJzggTTCf4SpvEQ8lXWoi5ZjhAx0ILZ&jump_from=webapi',
-      icon: 'i-ri-qq-line',
-      color: '#12B7F5',
-    },
-    {
-      name: 'GitHub',
-      link: 'https://github.com/YunYouJun',
-      icon: 'i-ri-github-line',
-      color: '#6e5494',
-    },
-    {
-      name: '微博',
-      link: 'https://weibo.com/jizhideyunyoujun',
-      icon: 'i-ri-weibo-line',
-      color: '#E6162D',
-    },
-    {
-      name: '豆瓣',
-      link: 'https://www.douban.com/people/yunyoujun/',
-      icon: 'i-ri-douban-line',
-      color: '#007722',
-    },
-    {
-      name: '网易云音乐',
-      link: 'https://music.163.com/#/user/home?id=247102977',
-      icon: 'i-ri-netease-cloud-music-line',
-      color: '#C20C0C',
-    },
-    {
-      name: '知乎',
-      link: 'https://www.zhihu.com/people/yunyoujun/',
-      icon: 'i-ri-zhihu-line',
-      color: '#0084FF',
-    },
-    {
-      name: '哔哩哔哩',
-      link: 'https://space.bilibili.com/1579790',
-      icon: 'i-ri-bilibili-line',
+      // 名称
+      name: 'E-Mail',
+      // 链接
+      link: 'mailto:mewhz@qq.com',
+      // 图标
+      icon: 'i-ri-mail-line',
+      // 颜色
       color: '#FF8EB3',
     },
     {
-      name: '微信公众号',
-      link: 'https://cdn.yunyoujun.cn/img/about/white-qrcode-and-search.jpg',
-      icon: 'i-ri-wechat-2-line',
-      color: '#1AAD19',
-    },
-    {
-      name: 'Twitter',
-      link: 'https://twitter.com/YunYouJun',
-      icon: 'i-ri-twitter-line',
-      color: '#1da1f2',
-    },
-    {
-      name: 'Telegram Channel',
-      link: 'https://t.me/elpsycn',
-      icon: 'i-ri-telegram-line',
-      color: '#0088CC',
-    },
-    {
-      name: 'E-Mail',
-      link: 'mailto:me@yunyoujun.cn',
-      icon: 'i-ri-mail-line',
+      name: 'GitHub',
+      link: 'https://github.com/mewhz',
+      icon: 'i-ri-github-line',
       color: '#8E71C1',
     },
-    {
-      name: 'Travelling',
-      link: 'https://www.travellings.cn/go.html',
-      icon: 'i-ri-train-line',
-      color: 'var(--va-c-text)',
-    },
   ],
-
-  search: {
-    enable: false,
-  },
-
-  sponsor: {
+  // 开启阅读统计
+  statistics: {
     enable: true,
-    title: '我很可爱，请给我钱！',
-    methods: [
-      {
-        name: '支付宝',
-        url: 'https://cdn.yunyoujun.cn/img/donate/alipay-qrcode.jpg',
-        color: '#00A3EE',
-        icon: 'i-ri-alipay-line',
+    readTime: {
+      // 阅读速度
+      speed: {
+        cn: 300,
+        en: 200,
       },
-      {
-        name: 'QQ 支付',
-        url: 'https://cdn.yunyoujun.cn/img/donate/qqpay-qrcode.png',
-        color: '#12B7F5',
-        icon: 'i-ri-qq-line',
-      },
-      {
-        name: '微信支付',
-        url: 'https://cdn.yunyoujun.cn/img/donate/wechatpay-qrcode.jpg',
-        color: '#2DC100',
-        icon: 'i-ri-wechat-pay-line',
-      },
-    ],
+    },
+  },
+  // 放大图片
+  mediumZoom: {
+    enable: true
   },
 })
