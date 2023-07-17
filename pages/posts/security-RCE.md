@@ -1,7 +1,7 @@
 ---
-title: 信息安全学习-RCE
+title: 网络安全学习-RCE
 tags:
-  - 信息安全
+  - 网络安全
 readmore: true
 date: 2023-02-09 11:18:31
 ---

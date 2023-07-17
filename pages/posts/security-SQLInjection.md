@@ -1,7 +1,7 @@
 ---
-title: '信息安全学习-SQL注入'
+title: '网络安全学习-SQL注入'
 tags:
-  - 信息安全
+  - 网络安全
 readmore: true
 abbrlink: e00997cb
 date: 2023-02-06 15:39:03

@@ -1,7 +1,7 @@
 ---
-title: '信息安全学习-Java 反序列化漏洞基础'
+title: '网络安全学习-Java 反序列化漏洞基础'
 tags:
-  - 信息安全
+  - 网络安全
 readmore: true
 layout: post
 date: 2023-06-16 03:22:28
