@@ -3,9 +3,8 @@ title: JavaScript模板字符串拼接(ES6新特性)
 tags:
   - JavaScript
 date: 2022-03-10 19:14:51
+updated: 2022-03-10 19:14:51
 ---
-
-
 
 ### ES6之前拼接字符串
 

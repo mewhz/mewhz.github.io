@@ -3,6 +3,7 @@ title: JavaScript导入本地JS文件中的函数
 tags:
   - JavaScript
 date: 2022-01-02 00:30:39
+updated: 2022-01-02 00:30:39
 ---
 
 ### HTML代码
