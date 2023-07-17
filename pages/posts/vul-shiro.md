@@ -9,7 +9,7 @@ tags:
 
 ### 简介
 
-Apache Shiro 是一个强大易用的Java安全框架,提供了认证、授权、加密和会话管理等功能，Shiro框架直观、易用、同时也能提供健壮的安全性。
+Apache Shiro 是一个强大易用的 Java 安全框架,提供了认证、授权、加密和会话管理等功能，Shiro 框架直观、易用、同时也能提供健壮的安全性。
 
 <!-- more -->
 
@@ -42,7 +42,7 @@ docker compose up -d
 
 #### 漏洞原理
 
-Shiro 1.2.4 之前版本使用的是硬编码，AES 加密的密钥默认在代码里面。其默认密钥的 base64 编码后的值为 KPH+blxk5D2deZilxcaaaA==，这里可以通过构造恶意的序列化对象进行编码，加密，然后作为Cookie 加密发送，服务器收到解密后并触发反序列化漏洞。
+Shiro 1.2.4 之前版本使用的是硬编码，AES 加密的密钥默认在代码里面。其默认密钥的 base64 编码后的值为 KPH+blxk5D2deZilxcaaaA==，这里可以通过构造恶意的序列化对象进行编码，加密，然后作为 Cookie 加密发送，服务器收到解密后并触发反序列化漏洞。
 
 #### 漏洞复现
 
@@ -91,9 +91,9 @@ docker run -p 8080:8080 -d shiro-721
 
 由于 Apache Shiro cookie 中通过 AES-128-CBC 模式加密的 rememberMe 字段存在问题，用户可通过 Padding Oracle 加密生成的攻击代码来构造恶意的 rememberMe 字段，并重新请求网站，进行反序列化攻击，最终导致任意代码执行。
 
-**Padding Oracle** : 是一种通过对DES、AES等block加解密算法的Padding进行调控，根据解密过程是否正常，结合调控内容进行攻击，在无需知道key的前提下达成解密密文或加密明文的效果。下面对其原理进行阐述。
+**Padding Oracle** : 是一种通过对 DES、AES 等 block 加解密算法的 Padding 进行调控，根据解密过程是否正常，结合调控内容进行攻击，在无需知道 key 的前提下达成解密密文或加密明文的效果。
 
-**Padding** : DES、AES等 block cipher 加解密算法要求输入内容的长度为block size 的整数倍。在加密过程中，若原始数据长度不符合该要求，则在其后添加 padding 部分以进行补足，在解密过程中，则在解密结果的末尾对 padding 部分进行移除。
+**Padding** : DES、AES 等 block cipher 加解密算法要求输入内容的长度为 block size 的整数倍。在加密过程中，若原始数据长度不符合该要求，则在其后添加 padding 部分以进行补足，在解密过程中，则在解密结果的末尾对 padding 部分进行移除。
 
 #### 漏洞复现
 
@@ -107,7 +107,7 @@ docker run -p 8080:8080 -d shiro-721
 
 ysoserial 是一款用于生成不安全的 Java 对象反序列化的 payloads 工具
 
-靶机环境中不存在 curl、ping 命令，建议使用 touch 创建文件
+靶机环境中不存在 curl、ping 命令，建议使用 touch 命令创建文件
 
 ```bash
 java -jar ysoserial-all.jar CommonsBeanutils1 "touch /tmp/success" > payload.class
