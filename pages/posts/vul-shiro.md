@@ -16,6 +16,10 @@ Apache Shiro 是一个强大易用的 Java 安全框架,提供了认证、授权
 
 ### CVE-2016-4437 (Apache Shiro 550 反序列化漏洞)
 
+#### 影响版本
+
+* Apache Shiro <= 1.2.4
+
 #### 环境搭建
 
 环境下载链接：https://github.com/vulhub/vulhub
@@ -30,10 +34,6 @@ cd vulhub-master/shiro/CVE-2016-4437/
 # 启动整个环境
 docker compose up -d
 ```
-
-#### 影响版本
-
-* Apache Shiro <= 1.2.4
 
 #### 指纹信息
 
