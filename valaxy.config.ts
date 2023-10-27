@@ -17,7 +17,7 @@ export default defineValaxyConfig<UserThemeConfig>({
   themeConfig: {
     banner: {
       enable: true,
-      title: '某星落的博客',
+      title: '星星得不到爱火',
       cloud: {
         enable: true,
       },

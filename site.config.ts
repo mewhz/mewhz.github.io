@@ -6,7 +6,7 @@ export default defineSiteConfig({
   url: 'https://mewhz.com/',
   lang: 'zh-CN',
   // 标题
-  title: '某星落的博客',
+  title: '星星得不到爱火',
   author: {
     // 名称
     name: '星落',
