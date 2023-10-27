@@ -4,7 +4,7 @@ title:  Linux 安装 Java 1.8 环境
 date: 2023-07-23 01:28:16
 updated: 2023-07-23 01:28:16
 tags:
-  - 配置
+  - 环境配置
   - Linux
 ---
 

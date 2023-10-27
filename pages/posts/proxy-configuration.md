@@ -1,7 +1,7 @@
 ---
 title:  '局域网共享系统代理'
 tags:
-  - 配置
+  - 环境配置
   - Linux
 readmore: true
 date: 2023-06-25 13:05:13

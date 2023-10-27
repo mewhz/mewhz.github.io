@@ -4,7 +4,7 @@ title:  Linux 安装 Maven 环境
 date: 2023-07-23 01:15:27
 updated: 2023-07-23 01:15:27
 tags:
-  - 配置
+  - 环境配置
   - Linux
 ---
 
