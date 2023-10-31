@@ -31,7 +31,7 @@ tags:
 | [Navicat Premium](https://www.navicat.com.cn/products/navicat-premium/) |        数据库管理工具         |
 |            [OBS Studio](https://obsproject.com/)             |         推流录屏软件          |
 |    [PhpStorm](https://www.jetbrains.com/zh-cn/phpstorm/)     |        开发 PHP 的 IDE        |
-|                [phpstudy](https://www.xp.cn/)                |      快速配置服务器环境       |
+|                [phpstudy](https://www.xp.cn/)                |      快速搭建服务器环境       |
 |              [PotPlayer](https://potplayer.tv/)              |          视频播放器           |
 |           [Proxifier](https://www.proxifier.com/)            |        代理客户端软件         |
 |     [PyCharm](https://www.jetbrains.com/zh-cn/pycharm/)      |      开发 Python 的 IDE       |
