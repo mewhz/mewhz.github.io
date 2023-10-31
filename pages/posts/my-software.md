@@ -19,7 +19,6 @@ tags:
 | :----------------------------------------------------------: | :---------------------------: |
 |                [ApiFox](https://apifox.com/)                 |          API调试工具          |
 |        [Burp Suite](https://portswigger.net/burp/pro)        |      集成化渗透测试工具       |
-|                      Clash for Windows                       |        小猫咪可爱滴捏🥰        |
 |    [Dev-C++](https://sourceforge.net/p/devcpp/home/Home/)    |    轻量级开发 C/C++ 的 IDE    |
 |            [Dolphin](https://cn.dolphin-emu.org/)            |     任天堂主机 Wii 模拟器     |
 |        [Everything](https://www.voidtools.com/zh-cn/)        |       快速搜索电脑文件        |
@@ -39,7 +38,6 @@ tags:
 |                [QQ](https://im.qq.com/index/)                |         黑历史回忆录          |
 |           [spacedesk](https://www.spacedesk.net/)            |   用于把其他设备变成拓展屏    |
 |           [Steam](https://store.steampowered.com/)           |     会员免费畅玩所有游戏      |
-|                           Telegram                           |         小飞机呼呼呼🛫         |
 |              [ToDesk](https://www.todesk.com/)               |         远程桌面软件          |
 |           [TortoiseGit](https://tortoisegit.org/)            |       Git 图形化客户端        |
 | [TrafficMonitor](https://github.com/zhongyang219/TrafficMonitor) |       系统资源监控设备        |
