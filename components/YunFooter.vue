@@ -13,7 +13,7 @@ import YunFooter from 'valaxy-theme-yun/components/YunFooter.vue'
     </VCLiveTime>
     <div class="support flex justify-center items-center">
     本网站由
-      <a class="inline-flex items-center" h="8" m="x-2" href="https://www.upyun.com" title="又拍云">
+      <a class="inline-flex items-center" h="8" m="x-2" href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" title="又拍云">
         <div class="upyun-logo" />
       </a>
     提供 CDN 加速
