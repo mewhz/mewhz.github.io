@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 网络安全学习-pikachu靶场搭建
 date: 2023-10-31 22:27:37
 updated: 2023-10-31 22:27:37
