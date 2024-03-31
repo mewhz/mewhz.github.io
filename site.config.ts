@@ -68,6 +68,10 @@ export default defineSiteConfig({
     enable: false,
   },
 
+  comment: {
+    enable: true,
+  }
+
 
   
 })
