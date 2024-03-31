@@ -67,7 +67,10 @@ export default defineSiteConfig({
   sponsor: {
     enable: false,
   },
-
-
+  
+  // 开启评论
+  comment: {
+    enable: true
+  },
   
 })
