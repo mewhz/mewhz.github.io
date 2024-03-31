@@ -15,16 +15,14 @@ export default defineValaxyConfig<UserThemeConfig>({
 
   theme: 'yun',
 
+  // 设置 valaxy-addon-waline 配置项
+  addons: [
+    addonWaline({
+      // Waline 配置项，参考 https://waline.js.org/reference/client/props.html
+      serverURL: 'https://waline.mewhz.com',
+    }), 
+  ],
 
-    // 设置 valaxy-addon-waline 配置项
-    addons: [
-      addonWaline({
-        // Waline 配置项，参考 https://waline.js.org/reference/client/props.html
-        serverURL: 'https://waline.mewhz.com',
-      }),
-    ],
-
-    
   themeConfig: {
     banner: {
       enable: true,
