@@ -19,11 +19,7 @@ declare module 'vue-router/auto-routes' {
    */
   export interface RouteNamedMap {
     '/': RouteRecordInfo<'/', '/', Record<never, never>, Record<never, never>>,
-<<<<<<< HEAD
     '/[...path]': RouteRecordInfo<'/[...path]', '/:path(.*)', { path: ParamValue<true> }, { path: ParamValue<false> }>,
-=======
-    '/[...all]': RouteRecordInfo<'/[...all]', '/:all(.*)', { all: ParamValue<true> }, { all: ParamValue<false> }>,
->>>>>>> e7b167221052988446ceb2e98dab8eed0bc6c0ff
     '/404': RouteRecordInfo<'/404', '/404', Record<never, never>, Record<never, never>>,
     '/about/': RouteRecordInfo<'/about/', '/about', Record<never, never>, Record<never, never>>,
     '/archives/': RouteRecordInfo<'/archives/', '/archives', Record<never, never>, Record<never, never>>,
@@ -31,6 +27,7 @@ declare module 'vue-router/auto-routes' {
     '/links/': RouteRecordInfo<'/links/', '/links', Record<never, never>, Record<never, never>>,
     '/page/[page]': RouteRecordInfo<'/page/[page]', '/page/:page', { page: ParamValue<true> }, { page: ParamValue<false> }>,
     '/posts/cc1': RouteRecordInfo<'/posts/cc1', '/posts/cc1', Record<never, never>, Record<never, never>>,
+    '/posts/Elasticsearch-basic': RouteRecordInfo<'/posts/Elasticsearch-basic', '/posts/Elasticsearch-basic', Record<never, never>, Record<never, never>>,
     '/posts/Front-and-rear-ends': RouteRecordInfo<'/posts/Front-and-rear-ends', '/posts/Front-and-rear-ends', Record<never, never>, Record<never, never>>,
     '/posts/high-accuracy': RouteRecordInfo<'/posts/high-accuracy', '/posts/high-accuracy', Record<never, never>, Record<never, never>>,
     '/posts/java-serialization': RouteRecordInfo<'/posts/java-serialization', '/posts/java-serialization', Record<never, never>, Record<never, never>>,

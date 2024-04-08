@@ -13,10 +13,11 @@
     "new": "valaxy new"
   },
   "dependencies": {
-    "valaxy": "0.15.10",
+    "valaxy": "0.18.5",
     "valaxy-addon-components": "^0.0.2",
     "valaxy-addon-waline": "^0.1.2",
-    "valaxy-theme-yun": "0.15.10"
+    "valaxy-blog": "link:",
+    "valaxy-theme-yun": "0.18.5"
   },
   "devDependencies": {
     "typescript": "^5.2.2"
