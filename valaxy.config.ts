@@ -21,7 +21,8 @@ export default defineValaxyConfig<UserThemeConfig>({
     addonBangumi({
       api: 'https://yi_xiao_jiu-bangumi.web.val.run',
       bilibiliEnabled: false,
-      bgmUid: '872987'
+      bgmUid: '872987',
+      customCss: '.bbc-header-platform .bbc-tabs { display: none; }'
     }),
     addonWaline({
       // Waline 配置项，参考 https://waline.js.org/reference/client/props.html
