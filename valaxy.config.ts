@@ -20,8 +20,8 @@ export default defineValaxyConfig<UserThemeConfig>({
   addons: [
     addonBangumi({
       api: 'https://yi_xiao_jiu-bangumi.web.val.run',
-      bilibiliUid: '4767208',
-      bgmEnabled: false,
+      bilibiliEnabled: false,
+      bgmUid: '872987'
     }),
     addonWaline({
       // Waline 配置项，参考 https://waline.js.org/reference/client/props.html
@@ -53,7 +53,14 @@ export default defineValaxyConfig<UserThemeConfig>({
       colors: ["#F73859", "#14FFEC", "#00E0FF", "#FF99FE", "#FAF15D"],
     },
 
-    pages: [],
+    pages: [
+      {
+        name: '追番列表',
+        url: '/bangumi/',
+        icon: 'i-ri-women-line',
+        color: 'hotpink',
+      }
+    ],
 
     footer: {
       since: 2019,
@@ -73,7 +80,7 @@ export default defineValaxyConfig<UserThemeConfig>({
     },
 
   },
-  
+
   vite: {
     optimizeDeps: {
       include: ['@waline/client/component'],

@@ -42,6 +42,12 @@ export default defineSiteConfig({
       icon: 'i-ri-github-line',
       color: '#8E71C1',
     },
+    {
+      name: 'GitHub',
+      link: 'https://github.com/mewhz',
+      icon: 'i-ri-github-line',
+      color: '#8E71C1',
+    },
   ],
   // 开启阅读统计
   statistics: {
