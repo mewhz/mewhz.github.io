@@ -6,24 +6,24 @@ settings:
 
 dependencies:
   valaxy:
-    specifier: 0.18.5
-    version: 0.18.5(@types/markdown-it@14.0.0)(@unhead/shared@1.9.4)(postcss@8.4.38)(typescript@5.4.4)(unhead@1.9.4)
+    specifier: 0.18.1
+    version: 0.18.1(@types/markdown-it@14.0.0)(@unhead/shared@1.9.4)(postcss@8.4.38)(typescript@5.4.4)(unhead@1.9.4)
   valaxy-addon-components:
     specifier: ^0.0.2
     version: 0.0.2
   valaxy-addon-waline:
-    specifier: ^0.1.2
-    version: 0.1.2(typescript@5.4.4)(valaxy@0.18.5)
+    specifier: ^0.1.1
+    version: 0.1.2(typescript@5.4.4)(valaxy@0.18.1)
   valaxy-blog:
     specifier: 'link:'
     version: 'link:'
   valaxy-theme-yun:
-    specifier: 0.18.5
+    specifier: ^0.18.1
     version: 0.18.5
 
 devDependencies:
   typescript:
-    specifier: ^5.2.2
+    specifier: ^5.3.3
     version: 5.4.4
 
 packages:
@@ -1341,13 +1341,13 @@ packages:
       - rollup
     dev: false
 
-  /@valaxyjs/devtools@0.18.5(debug@4.3.4):
-    resolution: {integrity: sha512-cBiHKaFI78Ok1VLliKH5pufTBKDhdc3YztVtm4/Ycio4z/D1ZlDBF0udTpSCDNvciWVpLLmcB55uWLOgIvTbfQ==}
+  /@valaxyjs/devtools@0.18.1:
+    resolution: {integrity: sha512-Si8oA5dWPu1fn9efW25+D0JENOozsJgSwInZ1DIc07BVzRMNlSOxNzokCqOxBVDXthk2cg3efJycv0D/d7soVA==}
     dependencies:
       '@rollup/pluginutils': 5.1.0
-      axios: 1.6.8(debug@4.3.4)
+      axios: 1.6.8
       body-parser: 1.20.2
-      http-proxy-middleware: 2.0.6(debug@4.3.4)
+      http-proxy-middleware: 2.0.6
       picocolors: 1.0.0
       sirv: 2.0.4
     transitivePeerDependencies:
@@ -1722,12 +1722,25 @@ packages:
       pathe: 1.1.2
     dev: false
 
-  /ast-walker-scope@0.6.1:
-    resolution: {integrity: sha512-0ZdQEsSfH3mX4BFbRCc3xOBjx5bDbm73+aAdQOHerPQNf8K0XFMAv79ucd2BpnSc4UMyvBDixiroT8yjm2Y6bw==}
+  /ast-kit@0.9.5:
+    resolution: {integrity: sha512-kbL7ERlqjXubdDd+szuwdlQ1xUxEz9mCz1+m07ftNVStgwRb2RWw+U6oKo08PAvOishMxiqz1mlJyLl8yQx2Qg==}
     engines: {node: '>=16.14.0'}
     dependencies:
       '@babel/parser': 7.24.4
-      ast-kit: 0.12.1
+      '@rollup/pluginutils': 5.1.0
+      pathe: 1.1.2
+    transitivePeerDependencies:
+      - rollup
+    dev: false
+
+  /ast-walker-scope@0.5.0:
+    resolution: {integrity: sha512-NsyHMxBh4dmdEHjBo1/TBZvCKxffmZxRYhmclfu0PP6Aftre47jOHYaYaNqJcV0bxihxFXhDkzLHUwHc0ocd0Q==}
+    engines: {node: '>=16.14.0'}
+    dependencies:
+      '@babel/parser': 7.24.4
+      ast-kit: 0.9.5
+    transitivePeerDependencies:
+      - rollup
     dev: false
 
   /async@3.2.5:
@@ -1742,10 +1755,10 @@ packages:
     resolution: {integrity: sha512-f86EjiUKE6Xvczc4ioP1JBlWG7FKrE13qe/DxBCpe8GCipCq2nFw73aO8QEBKHfSbYGDN5eB9jXWKen7tspDqQ==}
     dev: false
 
-  /axios@1.6.8(debug@4.3.4):
+  /axios@1.6.8:
     resolution: {integrity: sha512-v/ZHtJDU39mDpyBoFVkETcd/uNdxrWRrg3bKpOKzXFA6Bvqopts6ALSMU3y6ijYxbw2B+wPrIv46egTzJXCLGQ==}
     dependencies:
-      follow-redirects: 1.15.6(debug@4.3.4)
+      follow-redirects: 1.15.6
       form-data: 4.0.0
       proxy-from-env: 1.1.0
     transitivePeerDependencies:
@@ -2774,7 +2787,7 @@ packages:
       path-exists: 4.0.0
     dev: false
 
-  /follow-redirects@1.15.6(debug@4.3.4):
+  /follow-redirects@1.15.6:
     resolution: {integrity: sha512-wWN62YITEaOpSK584EZXJafH1AGpO8RVgElfkuXbTOrPX4fIfOyEpW/CsiNd8JdYrAoOvafRTOEnvsO++qCqFA==}
     engines: {node: '>=4.0'}
     peerDependencies:
@@ -2782,8 +2795,6 @@ packages:
     peerDependenciesMeta:
       debug:
         optional: true
-    dependencies:
-      debug: 4.3.4
     dev: false
 
   /form-data@4.0.0:
@@ -3022,7 +3033,7 @@ packages:
       - supports-color
     dev: false
 
-  /http-proxy-middleware@2.0.6(debug@4.3.4):
+  /http-proxy-middleware@2.0.6:
     resolution: {integrity: sha512-ya/UeJ6HVBYxrgYotAZo1KvPWlgB48kUJLDePFeneHsVujFaW5WNj2NgWCAE//B1Dl02BIfYlpNgBy8Kf8Rjmw==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -3032,7 +3043,7 @@ packages:
         optional: true
     dependencies:
       '@types/http-proxy': 1.17.14
-      http-proxy: 1.18.1(debug@4.3.4)
+      http-proxy: 1.18.1
       is-glob: 4.0.3
       is-plain-obj: 3.0.0
       micromatch: 4.0.5
@@ -3040,12 +3051,12 @@ packages:
       - debug
     dev: false
 
-  /http-proxy@1.18.1(debug@4.3.4):
+  /http-proxy@1.18.1:
     resolution: {integrity: sha512-7mz/721AbnJwIVbnaSv1Cz3Am0ZLT/UBwkC92VlxhXv/k/BBQfM2fXElQNC27BVGr0uwUpplYPQM9LnaBMR5NQ==}
     engines: {node: '>=8.0.0'}
     dependencies:
       eventemitter3: 4.0.7
-      follow-redirects: 1.15.6(debug@4.3.4)
+      follow-redirects: 1.15.6
       requires-port: 1.0.0
     transitivePeerDependencies:
       - debug
@@ -4723,10 +4734,10 @@ packages:
       - rollup
     dev: false
 
-  /unplugin-vue-router@0.8.5(vue-router@4.3.0)(vue@3.4.21):
-    resolution: {integrity: sha512-OBoHV24JXSiYH6qEEYT2YayoXh3C0Ma0rDX06+H9fmYXgwcBhEAZVfFt/lbJcBH7f86wCNti59pM4+E/3PjzBA==}
+  /unplugin-vue-router@0.7.0(vue-router@4.3.0)(vue@3.4.21):
+    resolution: {integrity: sha512-ddRreGq0t5vlSB7OMy4e4cfU1w2AwBQCwmvW3oP/0IHQiokzbx4hd3TpwBu3eIAFVuhX2cwNQwp1U32UybTVCw==}
     peerDependencies:
-      vue-router: ^4.3.0
+      vue-router: ^4.1.0
     peerDependenciesMeta:
       vue-router:
         optional: true
@@ -4734,11 +4745,11 @@ packages:
       '@babel/types': 7.24.0
       '@rollup/pluginutils': 5.1.0
       '@vue-macros/common': 1.10.2(vue@3.4.21)
-      ast-walker-scope: 0.6.1
+      ast-walker-scope: 0.5.0
       chokidar: 3.6.0
       fast-glob: 3.3.2
       json5: 2.2.3
-      local-pkg: 0.5.0
+      local-pkg: 0.4.3
       mlly: 1.6.1
       pathe: 1.1.2
       scule: 1.3.0
@@ -4802,13 +4813,13 @@ packages:
     resolution: {integrity: sha512-J6JeNTagohF9fNvYaYiOwVHQGuhoWamy1P01mEUfzreacaJ3CqzJU1G/uSFMTvm3CXvMo8OAQCwqa+OqBG0dkw==}
     dev: false
 
-  /valaxy-addon-waline@0.1.2(typescript@5.4.4)(valaxy@0.18.5):
+  /valaxy-addon-waline@0.1.2(typescript@5.4.4)(valaxy@0.18.1):
     resolution: {integrity: sha512-Qq0WZ+v4mjSLeV4xmGle3bQZhjRWzzjMakqUo37WZyLtfgZJQTeGaACfjCJ4uikS29GBoAOcOvlEr8PpLZEkQw==}
     peerDependencies:
       valaxy: latest
     dependencies:
       '@waline/client': 3.1.3(typescript@5.4.4)
-      valaxy: 0.18.5(@types/markdown-it@14.0.0)(@unhead/shared@1.9.4)(postcss@8.4.38)(typescript@5.4.4)(unhead@1.9.4)
+      valaxy: 0.18.1(@types/markdown-it@14.0.0)(@unhead/shared@1.9.4)(postcss@8.4.38)(typescript@5.4.4)(unhead@1.9.4)
     transitivePeerDependencies:
       - '@vue/composition-api'
       - typescript
@@ -4823,8 +4834,8 @@ packages:
       animejs: 3.2.2
     dev: false
 
-  /valaxy@0.18.5(@types/markdown-it@14.0.0)(@unhead/shared@1.9.4)(postcss@8.4.38)(typescript@5.4.4)(unhead@1.9.4):
-    resolution: {integrity: sha512-J7jpQq5Qp3EO/eo2HgrLXbODwZGV3ofAEljF1MNIPTxDm/My/WwnnEz9dPfO4zFf/I3QdygvGfc2iKPrAI3cjA==}
+  /valaxy@0.18.1(@types/markdown-it@14.0.0)(@unhead/shared@1.9.4)(postcss@8.4.38)(typescript@5.4.4)(unhead@1.9.4):
+    resolution: {integrity: sha512-kADcXFX/vpdAGHgHV11f51wYK1rdPOqbXxS5U8ex9imlY4qwkaq3ZUsUD1beAa9+DLzOBo8HJfwCFHsuRaSD8Q==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     dependencies:
@@ -4838,7 +4849,7 @@ packages:
       '@unhead/addons': 1.9.4
       '@unhead/schema-org': 1.9.4(@unhead/shared@1.9.4)(unhead@1.9.4)
       '@unhead/vue': 1.9.4(vue@3.4.21)
-      '@valaxyjs/devtools': 0.18.5(debug@4.3.4)
+      '@valaxyjs/devtools': 0.18.1
       '@vitejs/plugin-vue': 5.0.4(vite@5.2.8)(vue@3.4.21)
       '@vue/devtools-api': 7.0.25(vue@3.4.21)
       '@vueuse/core': 10.9.0(vue@3.4.21)
@@ -4849,7 +4860,6 @@ packages:
       cross-spawn: 7.0.3
       css-i18n: 0.0.2
       dayjs: 1.11.10
-      debug: 4.3.4
       defu: 6.1.4
       ejs: 3.1.9
       escape-html: 1.0.3
@@ -4883,10 +4893,11 @@ packages:
       sass: 1.74.1
       shiki: 1.2.4
       star-markdown-css: 0.4.2
+      unconfig: 0.3.12
       unocss: 0.58.9(postcss@8.4.38)(vite@5.2.8)
       unplugin-vue-components: 0.26.0(vue@3.4.21)
       unplugin-vue-markdown: 0.26.0(vite@5.2.8)
-      unplugin-vue-router: 0.8.5(vue-router@4.3.0)(vue@3.4.21)
+      unplugin-vue-router: 0.7.0(vue-router@4.3.0)(vue@3.4.21)
       vanilla-lazyload: 17.9.0
       vite: 5.2.8(sass@1.74.1)
       vite-plugin-vue-devtools: 7.0.25(vite@5.2.8)(vue@3.4.21)
@@ -4911,6 +4922,7 @@ packages:
       - bufferutil
       - canvas
       - change-case
+      - debug
       - drauu
       - focus-trap
       - idb-keyval
