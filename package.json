@@ -14,12 +14,13 @@
   },
   "dependencies": {
     "valaxy": "0.18.1",
+    "valaxy-addon-bangumi": "^0.2.0",
     "valaxy-addon-components": "^0.0.2",
-    "valaxy-addon-waline": "^0.1.1",
+    "valaxy-addon-waline": "^0.1.4",
     "valaxy-blog": "link:",
-    "valaxy-theme-yun": "^0.18.1"
+    "valaxy-theme-yun": "^0.18.6"
   },
   "devDependencies": {
-    "typescript": "^5.3.3"
+    "typescript": "^5.4.5"
   }
 }

@@ -1,6 +1,7 @@
 import { defineValaxyConfig } from 'valaxy'
 import type { UserThemeConfig } from 'valaxy-theme-yun'
 import { addonWaline } from 'valaxy-addon-waline'
+import { addonBangumi } from 'valaxy-addon-bangumi'
 
 // add icons what you will need
 const safelist = [
@@ -17,6 +18,11 @@ export default defineValaxyConfig<UserThemeConfig>({
 
   // 设置 valaxy-addon-waline 配置项
   addons: [
+    addonBangumi({
+      api: 'https://yi_xiao_jiu-bangumi.web.val.run',
+      bilibiliUid: '4767208',
+      bgmEnabled: false,
+    }),
     addonWaline({
       // Waline 配置项，参考 https://waline.js.org/reference/client/props.html
       serverURL: 'https://waline.mewhz.com',
@@ -66,6 +72,12 @@ export default defineValaxyConfig<UserThemeConfig>({
       }
     },
 
+  },
+  
+  vite: {
+    optimizeDeps: {
+      include: ['@waline/client/component'],
+    },
   },
 
   unocss: { safelist },
