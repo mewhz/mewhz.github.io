@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mewhz.com/</id>
     <title>星星得不到爱火</title>
-    <updated>2024-03-31T06:48:07.519Z</updated>
+    <updated>2024-08-27T01:47:41.784Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>星落</name>
@@ -15,6 +15,21 @@
     <logo>https://avatars.githubusercontent.com/u/48837161</logo>
     <icon>https://mewhz.com/favicon.svg</icon>
     <rights>CC BY-NC-SA 4.0 2024 © 星落</rights>
+    <entry>
+        <title type="html"><![CDATA[Elasticsearch 的安装与简单使用]]></title>
+        <id>https://mewhz.com/posts/Elasticsearch-basic</id>
+        <link href="https://mewhz.com/posts/Elasticsearch-basic"/>
+        <updated>2024-04-08T10:57:42.000Z</updated>
+        <content type="html"><![CDATA[<h3>一、简介</h3>
+<p>ES 是一款分布式、RESTful 风格的搜索和数据分析引擎，它可以近乎实时的存储、检索数据。</p>
+]]></content>
+        <author>
+            <name>星落</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2024-04-08T10:57:42.000Z</published>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Java反序列化CommonsCollections1(CC1)链分析]]></title>
         <id>https://mewhz.com/posts/cc1</id>
