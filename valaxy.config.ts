@@ -19,10 +19,12 @@ export default defineValaxyConfig<UserThemeConfig>({
   // 设置 valaxy-addon-waline 配置项
   addons: [
     addonBangumi({
-      api: 'https://yi_xiao_jiu-bangumi.web.val.run',
+      // api: 'https://yi_xiao_jiu-bangumi.web.val.run',
+      api: 'https://mewhz-raspygraywolf.web.val.run',
       bilibiliEnabled: false,
       bgmUid: '872987',
-      customCss: '.bbc-header-platform { display: none; } .bbc-tab-item { display: none; }'
+      customCss: '.bbc-header-platform { display: none; } .bbc-tab-item { display: none; }',
+      customEnabled: true
     }),
     addonWaline({
       // Waline 配置项，参考 https://waline.js.org/reference/client/props.html
