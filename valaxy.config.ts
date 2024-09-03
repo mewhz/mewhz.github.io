@@ -23,7 +23,7 @@ export default defineValaxyConfig<UserThemeConfig>({
       api: 'https://mewhz-raspygraywolf.web.val.run',
       bilibiliEnabled: false,
       bgmUid: '872987',
-      customCss: '.bbc-header-platform { display: none; } .bbc-tab-item { display: none; }',
+      // customCss: '.bbc-header-platform { display: none; } .bbc-tab-item { display: none; }',
       customEnabled: true
     }),
     addonWaline({
