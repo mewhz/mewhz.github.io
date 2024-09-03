@@ -23,8 +23,8 @@ export default defineValaxyConfig<UserThemeConfig>({
       api: 'https://mewhz-raspygraywolf.web.val.run',
       bilibiliEnabled: false,
       bgmUid: '872987',
-      customCss: '.divider { display: none; } .bbc-tabs { display: none; }',
-      customEnabled: true
+      // customCss: '.divider { display: none; } .bbc-tabs { display: none; }',
+      // customEnabled: true
     }),
     addonWaline({
       // Waline 配置项，参考 https://waline.js.org/reference/client/props.html
