@@ -19,18 +19,18 @@ export default defineValaxyConfig<UserThemeConfig>({
   addons: [
     // 设置 valaxy-addon-bangumi 配置项
     addonBangumi({
-      // api: 'https://yi_xiao_jiu-bangumi.web.val.run',
       api: 'https://mewhz-raspygraywolf.web.val.run',
       bilibiliEnabled: false,
       bgmUid: '872987',
-      customEnabled: true,
+      //  .bbc-tabs:nth-of-type(3) { display: none; }
       customCss: 
       `
         .bbc-bangumi-label { width: 30%; }
-        .bbc-bangumi-labels { margin-top: 10px; } 
-        .bbc-tabs:nth-of-type(3) { display: none; }
-        .divider { display: none; }
+        .bbc-bangumi-labels { margin-top: 10px; }
+        .bbc-tabs:nth-of-type(2) { background: yellow; }
+        .divider { display: none; }',
       `,
+      customEnabled: true,
       customLabel: 'Other'
     }),
     addonWaline({
