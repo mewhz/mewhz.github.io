@@ -1,5 +1,5 @@
 ---
-title: 追番列表1
+title: 追番列表
 keywords: Bangumi
 description: 追番列表
 ---

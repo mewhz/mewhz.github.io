@@ -22,16 +22,17 @@ export default defineValaxyConfig<UserThemeConfig>({
       api: 'https://mewhz-raspygraywolf.web.val.run',
       bilibiliEnabled: false,
       bgmUid: '872987',
-      //  .bbc-tabs:nth-of-type(3) { display: none; }
       customCss: 
-      `
+      `      
         .bbc-bangumi-label { width: 30%; }
         .bbc-bangumi-labels { margin-top: 10px; }
-        .bbc-tabs:nth-of-type(2) { background: yellow; }
-        .divider { display: none; }',
+        div > .bbc-tabs:nth-of-type(1) { display: none; }
+        .bbc-tabs:nth-of-type(3) { background: red; display: none; }
+        .bbc-header-platform .bbc-tabs:nth-of-type(1) { gap: 8px; display: flex; }
+        .divider { display: none; }
       `,
-      customEnabled: true,
-      customLabel: 'Other'
+      // customEnabled: true,
+      // customLabel: 'Other'
     }),
     addonWaline({
       // Waline 配置项，参考 https://waline.js.org/reference/client/props.html
