@@ -27,12 +27,20 @@ export default defineValaxyConfig<UserThemeConfig>({
         .bbc-bangumi-label { width: 30%; }
         .bbc-bangumi-labels { margin-top: 10px; }
         div > .bbc-tabs:nth-of-type(1) { display: none; }
-        .bbc-tabs:nth-of-type(3) { background: red; display: none; }
+        .bbc-tabs:nth-of-type(3) { display: none; }
         .bbc-header-platform .bbc-tabs:nth-of-type(1) { gap: 8px; display: flex; }
         .divider { display: none; }
       `,
-      // customEnabled: true,
-      // customLabel: 'Other'
+      /*
+        .bbc-bangumi-label { width: 30%; } 设置 value 的宽度
+        .bbc-bangumi-labels { margin-top: 10px; } 设置 value 和 标题的距离
+        .divider { display: none; } 隐藏 分割线
+        .bbc-header-platform .bbc-tabs:nth-of-type(1) { gap: 8px; display: flex; } 和下方的 css 选择器相同，防止被隐藏
+        div > .bbc-tabs:nth-of-type(1) { display: none; } 隐藏 全部 想看 等标签
+        .bbc-tabs:nth-of-type(3) { display: none; } 隐藏 动画 游戏 书籍标签
+      */
+      customEnabled: true,
+      customLabel: 'Other'
     }),
     addonWaline({
       // Waline 配置项，参考 https://waline.js.org/reference/client/props.html
