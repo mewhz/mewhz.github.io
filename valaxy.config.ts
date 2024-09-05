@@ -16,15 +16,22 @@ export default defineValaxyConfig<UserThemeConfig>({
 
   theme: 'yun',
 
-  // 设置 valaxy-addon-waline 配置项
   addons: [
+    // 设置 valaxy-addon-bangumi 配置项
     addonBangumi({
       // api: 'https://yi_xiao_jiu-bangumi.web.val.run',
       api: 'https://mewhz-raspygraywolf.web.val.run',
       bilibiliEnabled: false,
       bgmUid: '872987',
-      // customCss: '.divider { display: none; } .bbc-tabs { display: none; }',
-      // customEnabled: true
+      customEnabled: true,
+      customCss: 
+      `
+        .bbc-bangumi-label { width: 30%; }
+        .bbc-bangumi-labels { margin-top: 10px; } 
+        .bbc-tabs:nth-of-type(3) { display: none; }
+        .divider { display: none; }
+      `,
+      customLabel: 'Other'
     }),
     addonWaline({
       // Waline 配置项，参考 https://waline.js.org/reference/client/props.html

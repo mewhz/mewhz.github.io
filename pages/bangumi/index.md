@@ -1,7 +1,7 @@
 ---
-title: Bangumi 追番列表
+title: 追番列表
 keywords: Bangumi
-description: Bangumi 追番列表
+description: 追番列表
 ---
 
 <ValaxyBangumi />
