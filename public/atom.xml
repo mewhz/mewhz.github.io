@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mewhz.com/</id>
     <title>星星得不到爱火</title>
-    <updated>2024-09-05T15:35:42.946Z</updated>
+    <updated>2024-09-19T05:37:07.990Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>星落</name>
@@ -15,6 +15,20 @@
     <logo>https://avatars.githubusercontent.com/u/48837161</logo>
     <icon>https://mewhz.com/favicon.svg</icon>
     <rights>CC BY-NC-SA 4.0 2024 © 星落</rights>
+    <entry>
+        <title type="html"><![CDATA[Minio 的安装与简单使用]]></title>
+        <id>https://mewhz.com/posts/Minio-basic</id>
+        <link href="https://mewhz.com/posts/Minio-basic"/>
+        <updated>2024-09-19T05:28:58.000Z</updated>
+        <content type="html"><![CDATA[<p>MinIO 是一款基于 Go 语言开发的高性能、分布式的对象存储系统。兼容亚马逊 S3 云存储服务接口，非常适合存储大容量非结构化的数据，例如图片、视频、日志文件、备份数据和容器/虚拟机镜像等，而一个文件对象可以是任意大小，从几 kb 到最大 5T 不等。</p>
+<br/><p>访问 <a href="https://mewhz.com/posts/Minio-basic" target="_blank">https://mewhz.com/posts/Minio-basic</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>星落</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2024-09-19T05:28:58.000Z</published>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Elasticsearch 的安装与简单使用]]></title>
         <id>https://mewhz.com/posts/Elasticsearch-basic</id>

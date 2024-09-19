@@ -38,6 +38,7 @@ declare module 'vue-router/auto-routes' {
     '/posts/linux-java8': RouteRecordInfo<'/posts/linux-java8', '/posts/linux-java8', Record<never, never>, Record<never, never>>,
     '/posts/linux-maven': RouteRecordInfo<'/posts/linux-maven', '/posts/linux-maven', Record<never, never>, Record<never, never>>,
     '/posts/Maven-aliyun': RouteRecordInfo<'/posts/Maven-aliyun', '/posts/Maven-aliyun', Record<never, never>, Record<never, never>>,
+    '/posts/Minio-basic': RouteRecordInfo<'/posts/Minio-basic', '/posts/Minio-basic', Record<never, never>, Record<never, never>>,
     '/posts/my-software': RouteRecordInfo<'/posts/my-software', '/posts/my-software', Record<never, never>, Record<never, never>>,
     '/posts/MySQL-id-auto': RouteRecordInfo<'/posts/MySQL-id-auto', '/posts/MySQL-id-auto', Record<never, never>, Record<never, never>>,
     '/posts/pows': RouteRecordInfo<'/posts/pows', '/posts/pows', Record<never, never>, Record<never, never>>,

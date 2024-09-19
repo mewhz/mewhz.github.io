@@ -12,6 +12,18 @@
     "items": [
         {
             "id": "",
+            "content_html": "<p>MinIO 是一款基于 Go 语言开发的高性能、分布式的对象存储系统。兼容亚马逊 S3 云存储服务接口，非常适合存储大容量非结构化的数据，例如图片、视频、日志文件、备份数据和容器/虚拟机镜像等，而一个文件对象可以是任意大小，从几 kb 到最大 5T 不等。</p>\n<br/><p>访问 <a href=\"https://mewhz.com/posts/Minio-basic\" target=\"_blank\">https://mewhz.com/posts/Minio-basic</a> 阅读全文。</p>",
+            "url": "https://mewhz.com/posts/Minio-basic",
+            "title": "Minio 的安装与简单使用",
+            "date_modified": "2024-09-19T05:28:58.000Z",
+            "date_published": "2024-09-19T05:28:58.000Z",
+            "author": {
+                "name": "星落",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
             "content_html": "<h3>一、简介</h3>\n<p>ES 是一款分布式、RESTful 风格的搜索和数据分析引擎，它可以近乎实时的存储、检索数据。</p>\n<br/><p>访问 <a href=\"https://mewhz.com/posts/Elasticsearch-basic\" target=\"_blank\">https://mewhz.com/posts/Elasticsearch-basic</a> 阅读全文。</p>",
             "url": "https://mewhz.com/posts/Elasticsearch-basic",
             "title": "Elasticsearch 的安装与简单使用",
