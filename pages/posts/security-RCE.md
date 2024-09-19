@@ -7,8 +7,6 @@ date: 2023-02-09 11:18:31
 updated: 2023-02-09 11:18:31
 ---
 
-### 简介
-
 RCE漏洞，可以让攻击者直接向后台服务器远程注入操作系统命令或者代码，从而控制后台系统。因为需求设计,后台有时候也会把用户的输入作为代码的一部分进行执行，也就造成了远程代码执行漏洞。
 
 <!-- more -->
@@ -142,21 +140,21 @@ certuil -urlcache 192 delete
 
 启动后，在蚁剑空白处右键，选择添加数据；
 
-![](https://pic.mewhz.com/rce/1.png)
+![](https://pic.mewhz.com/blog/rce-1.png)
 
 在基础配置中的 url 地址，输入靶场中木马所在的 url；
 
 连接密码输入 cmd，即刚刚木马中 $_POST 的参数；
 
-![](https://pic.mewhz.com/rce/2.png)
+![](https://pic.mewhz.com/blog/rce-2.png)
 
 单击测试连接，显示连接成功后，单击添加；
 
 右键刚刚添加的记录，选择文件管理就可以对木马所在的服务器进行文件操作；
 
-![](https://pic.mewhz.com/rce/3.png)
+![](https://pic.mewhz.com/blog/rce-3.png)
 
-![](https://pic.mewhz.com/rce/4.png)
+![](https://pic.mewhz.com/blog/rce-4.png)
 
 
 

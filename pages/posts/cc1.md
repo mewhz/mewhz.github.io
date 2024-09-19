@@ -7,8 +7,6 @@ tags:
   - Java安全
 ---
 
-### 简介
-
 [Apache Commons ](http://commons.apache.org/)是 Apache 软件基金会的项目，`Commons` 的目的是提供可重用的、解决各种实际的通用问题且开源的 Java 代码。[Commons Collections](http://commons.apache.org/proper/commons-collections/) 包为 Java 标准的 `Collections API` 提供了相当好的补充。在此基础上对其常用的数据结构操作进行了很好的封装、抽象和补充。让我们在开发应用程序的过程中，既保证了性能，同时也能大大简化代码。
 <!-- more -->
 

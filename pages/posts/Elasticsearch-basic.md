@@ -8,13 +8,11 @@ tags:
   - Elasticsearch
 ---
 
-### 一、简介
-
 ES 是一款分布式、RESTful 风格的搜索和数据分析引擎，它可以近乎实时的存储、检索数据。
 
 <!-- more -->
 
-### 二、安装 Elasticsearch
+### 一、安装 Elasticsearch
 
 官网地址：https://www.elastic.co/cn/elasticsearch
 
@@ -46,7 +44,7 @@ ES 是一款分布式、RESTful 风格的搜索和数据分析引擎，它可以
 >
 >修改：**xpack.security.http.ssl:  enabled: false**，表示不启用 SSL 加密连接
 
-### 三、安装 Kibana
+### 二、安装 Kibana
 
 Kibana 是 Elasticsearch 的可视化平台，需要先启动 Elasticsearch。
 
@@ -70,7 +68,7 @@ Kibana 是 Elasticsearch 的可视化平台，需要先启动 Elasticsearch。
 
 ![image-20240401103017879](https://pic.mewhz.com/blog/image-20240401103017879.png)
 
-### 四、安装 IK 分词器
+### 三、安装 IK 分词器
 
 IK 分词器可以对中文进行一个分词的操作。把中文划分成一个个的关键字，在搜索的时候会将关键词进行分词，会把索引库中的数据进行分词，然后进行匹配操作。若不使用 IK 分词器，会默认把中文的每个字看作是一个词。
 
@@ -80,7 +78,7 @@ IK 分词器可以对中文进行一个分词的操作。把中文划分成一�
 
 下载完成后解压放到 Elasticsearch 的 **plugins** 目录下，重启 Elasticsearch。
 
-### 五、DSL 测试
+### 四、DSL 测试
 
 DSL 是一种用于构建查询的语言，以便于在 Elasticsearch 中执行搜索操作。
 
@@ -175,7 +173,7 @@ GET _analyze
 
 ![image-20240401164903283](https://pic.mewhz.com/blog/image-20240401164903283.png)
 
-### 六、ES 的简单使用
+### 五、ES 的简单使用
 
 **索引**：ES 中的索引相当于关系型数据库中的**表**。在 ES 中存储数据，首先需要创建索引，然后在索引中增加、搜索和更新数据。
 
@@ -464,7 +462,7 @@ get /student/_doc/001
 
 ![image-20240405214614961](https://pic.mewhz.com/blog/image-20240405214614961.png)
 
-### SpringBoot 集成 ES
+### 六、SpringBoot 集成 ES
 
 **spring-boot-starter-data-elasticsearch**：基于 Elasticsearch 官方提供的客户端库构建，简化了与 Elasticsearch 的交互。
 

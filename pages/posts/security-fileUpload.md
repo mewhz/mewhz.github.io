@@ -7,8 +7,6 @@ date: 2023-02-20 11:30:26
 updated: 2023-02-20 11:30:26
 ---
 
-### 简介
-
 文件上传本身是指一个功能，比如用户可以上传头像、上传资料等。如果能够上传文件，则可能存在文件上传的漏洞。
 
 任意文件上传漏洞的产生需要满足三个条件：
@@ -49,7 +47,7 @@ http://192.168.31.195/pikachu/vul/unsafeupload/uploads/avatar.jpg
 
 F12 或者在网站空白处右键检查；发现表单处调用了 JavaScript 函数，这里直接给它删除掉再次上传即可上传成功。
 
-![](https://pic.mewhz.com/fileUpload/1.png)
+![](https://pic.mewhz.com/blog/1-fileUpload.png)
 
 #### 利用漏洞
 
@@ -65,21 +63,21 @@ F12 或者在网站空白处右键检查；发现表单处调用了 JavaScript �
 
 启动后，在蚁剑空白处右键，选择添加数据；
 
-![](https://pic.mewhz.com/rce/1.png)
+![](https://pic.mewhz.com/blog/rce-1.png)
 
 在基础配置中的 url 地址，输入靶场中木马所在的 url；
 
 连接密码输入 cmd，即刚刚木马中 $_POST 的参数；
 
-![](https://pic.mewhz.com/fileUpload/2.png)
+![](https://pic.mewhz.com/blog/2-fileUpload.png)
 
 单击测试连接，显示连接成功后，单击添加；
 
 右键刚刚添加的记录，选择文件管理就可以对木马所在的服务器进行文件操作；
 
-![](https://pic.mewhz.com/fileUpload/3.png)
+![](https://pic.mewhz.com/blog/3-fileUpload.png)
 
-![](https://pic.mewhz.com/fileUpload/4.png)
+![](https://pic.mewhz.com/blog/4-fileUpload.png)
 
 ---
 
@@ -97,7 +95,7 @@ F12 或者在网站空白处右键检查；发现表单处调用了 JavaScript �
 
 将抓到的请求右键 ”Send to Repeater“，发送到请求模块，修改请求头中的内容类型；
 
-![](https://pic.mewhz.com/fileUpload/5.png)
+![](https://pic.mewhz.com/blog/5-fileUpload.png)
 
 把 **Content-Type: application/octet-stream** 修改成 **Content-Type: image/jpg**
 
@@ -131,11 +129,11 @@ F12 或者在网站空白处右键检查；发现表单处调用了 JavaScript �
 
 3. 修改文件后缀名，同样可以直接在上传之前进行修改：
 
-   ![](https://pic.mewhz.com/fileUpload/6.png)
+   ![](https://pic.mewhz.com/blog/6-fileUpload.png)
 
 4. 在文件内容的首部加上 "GIF89a"，代表该文件是 GIF89a 格式的文件：
 
-   ![](https://pic.mewhz.com/fileUpload/7.png)
+   ![](https://pic.mewhz.com/blog/7-fileUpload.png)
 
 5. 上传后成功显示文件的上传路径；
 

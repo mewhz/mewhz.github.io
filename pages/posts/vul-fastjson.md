@@ -8,8 +8,6 @@ tags:
   - 框架漏洞
 ---
 
-### 简介
-
 Fastjson 是阿里巴巴的开源 JSON 解析库，它可以解析 JSON 格式的字符串，支持将 Java Bean 序列化为 JSON 字符串，也可以从 JSON 字符串反序列化到 JavaBean。
 
 <!-- more -->
