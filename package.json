@@ -13,6 +13,7 @@
     "new": "valaxy new"
   },
   "dependencies": {
+    "@iconify-json/ri": "^1.2.0",
     "valaxy": "0.19.9",
     "valaxy-addon-bangumi": "^0.2.2",
     "valaxy-addon-components": "^0.0.2",

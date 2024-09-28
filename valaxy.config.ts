@@ -59,12 +59,12 @@ export default defineValaxyConfig<UserThemeConfig>({
 
     bg_image : {
       enable: true,
-      url: 'https://pic.mewhz.com/img/bg.jpg',
-      opacity: 0.2,
+      url: 'https://pic.mewhz.com/img/bg2.jpeg',
+      // opacity: 0.2,
     },
 
     colors: {
-      primary: '#73D7F8'
+      primary: '#FF6A6A'
     },
 
     fireworks : {
@@ -74,10 +74,22 @@ export default defineValaxyConfig<UserThemeConfig>({
 
     pages: [
       {
+        name: '小伙伴们',
+        url: '/links/',
+        icon: 'i-ri-links-line',
+        color: 'dodgerblue'
+      },
+      {
         name: '追番列表',
         url: '/bangumi/',
-        icon: 'i-ri-women-line',
+        icon: 'i-ri-heart-2-line',
         color: 'hotpink',
+      },
+      {
+        name: '笔记',
+        url: 'https://notes.mewhz.com',
+        icon: 'i-ri-book-marked-line',
+        color: 'orange',
       }
     ],
 
@@ -92,9 +104,9 @@ export default defineValaxyConfig<UserThemeConfig>({
 
     menu: {
       custom: {
-        title: '小伙伴们',
-        url: '/links/',
-        icon: 'i-ri-genderless-line',
+        title: '关于',
+        url: '/about/',
+        icon: 'i-ri-clipboard-line',
       }
     },
 

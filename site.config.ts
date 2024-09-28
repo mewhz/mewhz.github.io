@@ -21,11 +21,23 @@ export default defineSiteConfig({
   // 副标题
   subtitle: '',
   // 主标题
-  description: '真正的大师永远都怀着一颗学徒的心',
+  description: '从前从前有个人爱你很久',
   // 站点图标
   favicon: 'https://pic.mewhz.com/img/favicon.ico',
   // 社交图标
   social: [
+    {
+      name: '哔哩哔哩',
+      link: 'https://space.bilibili.com/4767208',
+      icon: 'i-ri-bilibili-line',
+      color: '#FF8EB3',
+    },
+    {
+      name: 'GitHub',
+      link: 'https://github.com/mewhz',
+      icon: 'i-ri-github-line',
+      color: 'rgb(142, 113, 193);',
+    },
     {
       // 名称
       name: 'E-Mail',
@@ -34,13 +46,7 @@ export default defineSiteConfig({
       // 图标
       icon: 'i-ri-mail-line',
       // 颜色
-      color: '#FF8EB3',
-    },
-    {
-      name: 'GitHub',
-      link: 'https://github.com/mewhz',
-      icon: 'i-ri-github-line',
-      color: '#8E71C1',
+      color: '#0088CC',
     },
   ],
   // 开启阅读统计

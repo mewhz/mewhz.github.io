@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@iconify-json/ri':
+        specifier: ^1.2.0
+        version: 1.2.0
       valaxy:
         specifier: 0.19.9
         version: 0.19.9(@babel/parser@7.25.6)(@types/markdown-it@14.1.2)(@types/node@20.12.7)(axios@1.7.7)(postcss@8.4.44)(rollup@4.21.2)(typescript@5.5.4)
