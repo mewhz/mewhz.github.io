@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mewhz.com/</id>
     <title>星星得不到爱火</title>
-    <updated>2024-09-19T05:37:07.990Z</updated>
+    <updated>2025-02-21T05:26:12.831Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>星落</name>
@@ -11,15 +11,15 @@
     </author>
     <link rel="alternate" href="https://mewhz.com/"/>
     <link rel="self" href="https://mewhz.com/atom.xml"/>
-    <subtitle>真正的大师永远都怀着一颗学徒的心</subtitle>
+    <subtitle>从前从前有个人爱你很久</subtitle>
     <logo>https://avatars.githubusercontent.com/u/48837161</logo>
     <icon>https://mewhz.com/favicon.svg</icon>
-    <rights>CC BY-NC-SA 4.0 2024 © 星落</rights>
+    <rights>CC BY-NC-SA 4.0 2025 © 星落</rights>
     <entry>
         <title type="html"><![CDATA[Minio 的安装与简单使用]]></title>
         <id>https://mewhz.com/posts/Minio-basic</id>
         <link href="https://mewhz.com/posts/Minio-basic"/>
-        <updated>2024-09-19T05:28:58.000Z</updated>
+        <updated>2024-09-19T13:28:58.000Z</updated>
         <content type="html"><![CDATA[<p>MinIO 是一款基于 Go 语言开发的高性能、分布式的对象存储系统。兼容亚马逊 S3 云存储服务接口，非常适合存储大容量非结构化的数据，例如图片、视频、日志文件、备份数据和容器/虚拟机镜像等，而一个文件对象可以是任意大小，从几 kb 到最大 5T 不等。</p>
 <br/><p>访问 <a href="https://mewhz.com/posts/Minio-basic" target="_blank">https://mewhz.com/posts/Minio-basic</a> 阅读全文。</p>]]></content>
         <author>
@@ -27,43 +27,41 @@
             <email>i@valaxy.site</email>
             <uri>https://valaxy.site</uri>
         </author>
-        <published>2024-09-19T05:28:58.000Z</published>
+        <published>2024-09-19T13:28:58.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[Elasticsearch 的安装与简单使用]]></title>
         <id>https://mewhz.com/posts/Elasticsearch-basic</id>
         <link href="https://mewhz.com/posts/Elasticsearch-basic"/>
-        <updated>2024-04-08T02:57:42.000Z</updated>
-        <content type="html"><![CDATA[<h3>一、简介</h3>
-<p>ES 是一款分布式、RESTful 风格的搜索和数据分析引擎，它可以近乎实时的存储、检索数据。</p>
+        <updated>2024-04-08T10:57:42.000Z</updated>
+        <content type="html"><![CDATA[<p>ES 是一款分布式、RESTful 风格的搜索和数据分析引擎，它可以近乎实时的存储、检索数据。</p>
 <br/><p>访问 <a href="https://mewhz.com/posts/Elasticsearch-basic" target="_blank">https://mewhz.com/posts/Elasticsearch-basic</a> 阅读全文。</p>]]></content>
         <author>
             <name>星落</name>
             <email>i@valaxy.site</email>
             <uri>https://valaxy.site</uri>
         </author>
-        <published>2024-04-08T02:57:42.000Z</published>
+        <published>2024-04-08T10:57:42.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[Java反序列化CommonsCollections1(CC1)链分析]]></title>
         <id>https://mewhz.com/posts/cc1</id>
         <link href="https://mewhz.com/posts/cc1"/>
-        <updated>2024-03-12T08:57:42.000Z</updated>
-        <content type="html"><![CDATA[<h3>简介</h3>
-<p><a href="http://commons.apache.org/">Apache Commons </a>是 Apache 软件基金会的项目，<code>Commons</code> 的目的是提供可重用的、解决各种实际的通用问题且开源的 Java 代码。<a href="http://commons.apache.org/proper/commons-collections/">Commons Collections</a> 包为 Java 标准的 <code>Collections API</code> 提供了相当好的补充。在此基础上对其常用的数据结构操作进行了很好的封装、抽象和补充。让我们在开发应用程序的过程中，既保证了性能，同时也能大大简化代码。</p>
+        <updated>2024-03-12T16:57:42.000Z</updated>
+        <content type="html"><![CDATA[<p><a href="http://commons.apache.org/">Apache Commons </a>是 Apache 软件基金会的项目，<code>Commons</code> 的目的是提供可重用的、解决各种实际的通用问题且开源的 Java 代码。<a href="http://commons.apache.org/proper/commons-collections/">Commons Collections</a> 包为 Java 标准的 <code>Collections API</code> 提供了相当好的补充。在此基础上对其常用的数据结构操作进行了很好的封装、抽象和补充。让我们在开发应用程序的过程中，既保证了性能，同时也能大大简化代码。</p>
 <br/><p>访问 <a href="https://mewhz.com/posts/cc1" target="_blank">https://mewhz.com/posts/cc1</a> 阅读全文。</p>]]></content>
         <author>
             <name>星落</name>
             <email>i@valaxy.site</email>
             <uri>https://valaxy.site</uri>
         </author>
-        <published>2024-03-12T08:57:42.000Z</published>
+        <published>2024-03-12T16:57:42.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[网络安全学习-pikachu靶场-暴力破解]]></title>
         <id>https://mewhz.com/posts/security-burteforce-pikachu</id>
         <link href="https://mewhz.com/posts/security-burteforce-pikachu"/>
-        <updated>2024-01-11T12:34:37.000Z</updated>
+        <updated>2024-01-11T20:34:37.000Z</updated>
         <content type="html"><![CDATA[<p>在web攻击中，一般会使用这种手段对应用系统的认证信息进行获取。 其过程就是使用大量的认证信息在认证接口进行尝试登录，直到得到正确的结果。 为了提高效率，暴力破解一般会使用带有字典的工具来进行自动化操作。</p>
 <br/><p>访问 <a href="https://mewhz.com/posts/security-burteforce-pikachu" target="_blank">https://mewhz.com/posts/security-burteforce-pikachu</a> 阅读全文。</p>]]></content>
         <author>
@@ -71,13 +69,13 @@
             <email>i@valaxy.site</email>
             <uri>https://valaxy.site</uri>
         </author>
-        <published>2024-01-11T12:34:37.000Z</published>
+        <published>2024-01-11T20:34:37.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[微信小程序抓包]]></title>
         <id>https://mewhz.com/posts/vx-application-yakit</id>
         <link href="https://mewhz.com/posts/vx-application-yakit"/>
-        <updated>2023-11-14T09:11:42.000Z</updated>
+        <updated>2023-11-14T17:11:42.000Z</updated>
         <content type="html"><![CDATA[<p>在 Windows端，使用 Yakit 和 Proxifier 配合对微信小程序进行抓包。使用 Proxifier 设置微信小程序请求时通过的代理端口，并使用 Yakit 监听该端口的所有请求，再通过 Yakit 把请求发送出去</p>
 <br/><p>访问 <a href="https://mewhz.com/posts/vx-application-yakit" target="_blank">https://mewhz.com/posts/vx-application-yakit</a> 阅读全文。</p>]]></content>
         <author>
@@ -85,13 +83,13 @@
             <email>i@valaxy.site</email>
             <uri>https://valaxy.site</uri>
         </author>
-        <published>2023-11-14T09:11:42.000Z</published>
+        <published>2023-11-14T17:11:42.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[网络安全学习-pikachu靶场搭建]]></title>
         <id>https://mewhz.com/posts/security-setup-pikachu</id>
         <link href="https://mewhz.com/posts/security-setup-pikachu"/>
-        <updated>2023-10-31T14:27:37.000Z</updated>
+        <updated>2023-10-31T22:27:37.000Z</updated>
         <content type="html"><![CDATA[<p>pikachu 是一个带有漏洞的 web 应用系统，在这里包含了常见的 web 安全漏洞。 如果你是一个 web 渗透测试学习人员且正发愁没有合适的靶场进行练习，那么 pikachu 可能正合你意。</p>
 <br/><p>访问 <a href="https://mewhz.com/posts/security-setup-pikachu" target="_blank">https://mewhz.com/posts/security-setup-pikachu</a> 阅读全文。</p>]]></content>
         <author>
@@ -99,30 +97,14 @@
             <email>i@valaxy.site</email>
             <uri>https://valaxy.site</uri>
         </author>
-        <published>2023-10-31T14:27:37.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[常用软件记录]]></title>
-        <id>https://mewhz.com/posts/my-software</id>
-        <link href="https://mewhz.com/posts/my-software"/>
-        <updated>2023-10-29T12:10:36.000Z</updated>
-        <content type="html"><![CDATA[<p>记录一些自己设备上常用或必备的软件</p>
-<p><strong>按照软件名称的首字母进行排序</strong></p>
-<br/><p>访问 <a href="https://mewhz.com/posts/my-software" target="_blank">https://mewhz.com/posts/my-software</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>星落</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2023-10-29T12:10:36.000Z</published>
+        <published>2023-10-31T22:27:37.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[Socks5 隧道的简易搭建与使用]]></title>
         <id>https://mewhz.com/posts/socks5-basic</id>
         <link href="https://mewhz.com/posts/socks5-basic"/>
-        <updated>2023-10-27T19:12:48.000Z</updated>
-        <content type="html"><![CDATA[<h3>简介</h3>
-<p>Socks5 ( Socket secure 5 ) 是一种网络协议，用于在客户端和代理服务器之间进行通信。它是 Socks 协议的第五个版本，Socks5 协议支持 TCP 和 UDP 协议，并提供了认证和加密的功能。</p>
+        <updated>2023-10-28T03:12:48.000Z</updated>
+        <content type="html"><![CDATA[<p>Socks5 ( Socket secure 5 ) 是一种网络协议，用于在客户端和代理服务器之间进行通信。它是 Socks 协议的第五个版本，Socks5 协议支持 TCP 和 UDP 协议，并提供了认证和加密的功能。</p>
 <p>Socks5 协议广泛用于代理服务器、XX 上网、匿名访问、负载均衡等场景。它提供了一种通用的、灵活的代理解决方案，可以在各种网络环境和应用中使用。</p>
 <br/><p>访问 <a href="https://mewhz.com/posts/socks5-basic" target="_blank">https://mewhz.com/posts/socks5-basic</a> 阅读全文。</p>]]></content>
         <author>
@@ -130,28 +112,27 @@
             <email>i@valaxy.site</email>
             <uri>https://valaxy.site</uri>
         </author>
-        <published>2023-10-27T19:12:48.000Z</published>
+        <published>2023-10-28T03:12:48.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[Fastjson 漏洞复现]]></title>
         <id>https://mewhz.com/posts/vul-fastjson</id>
         <link href="https://mewhz.com/posts/vul-fastjson"/>
-        <updated>2023-07-22T17:41:35.000Z</updated>
-        <content type="html"><![CDATA[<h3>简介</h3>
-<p>Fastjson 是阿里巴巴的开源 JSON 解析库，它可以解析 JSON 格式的字符串，支持将 Java Bean 序列化为 JSON 字符串，也可以从 JSON 字符串反序列化到 JavaBean。</p>
+        <updated>2023-07-23T01:41:35.000Z</updated>
+        <content type="html"><![CDATA[<p>Fastjson 是阿里巴巴的开源 JSON 解析库，它可以解析 JSON 格式的字符串，支持将 Java Bean 序列化为 JSON 字符串，也可以从 JSON 字符串反序列化到 JavaBean。</p>
 <br/><p>访问 <a href="https://mewhz.com/posts/vul-fastjson" target="_blank">https://mewhz.com/posts/vul-fastjson</a> 阅读全文。</p>]]></content>
         <author>
             <name>星落</name>
             <email>i@valaxy.site</email>
             <uri>https://valaxy.site</uri>
         </author>
-        <published>2023-07-22T17:41:35.000Z</published>
+        <published>2023-07-23T01:41:35.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[Linux 安装 Java 1.8 环境]]></title>
         <id>https://mewhz.com/posts/linux-java8</id>
         <link href="https://mewhz.com/posts/linux-java8"/>
-        <updated>2023-07-22T17:28:16.000Z</updated>
+        <updated>2023-07-23T01:28:16.000Z</updated>
         <content type="html"><![CDATA[<p>访问网址下载 Linux 版本的 Java 1.8：<a href="https://www.oracle.com/java/technologies/downloads/#java8">https://www.oracle.com/java/technologies/downloads/#java8</a></p>
 <p>![image-202</p>
 <br/><p>访问 <a href="https://mewhz.com/posts/linux-java8" target="_blank">https://mewhz.com/posts/linux-java8</a> 阅读全文。</p>]]></content>
@@ -160,13 +141,13 @@
             <email>i@valaxy.site</email>
             <uri>https://valaxy.site</uri>
         </author>
-        <published>2023-07-22T17:28:16.000Z</published>
+        <published>2023-07-23T01:28:16.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[Linux 安装 Maven 环境]]></title>
         <id>https://mewhz.com/posts/linux-maven</id>
         <link href="https://mewhz.com/posts/linux-maven"/>
-        <updated>2023-07-22T17:15:27.000Z</updated>
+        <updated>2023-07-23T01:15:27.000Z</updated>
         <content type="html"><![CDATA[<pre><code class="language-bash">sudo apt update
 # 更新软件包列表
 sudo apt install maven
@@ -179,30 +160,28 @@ sudo apt install maven
             <email>i@valaxy.site</email>
             <uri>https://valaxy.site</uri>
         </author>
-        <published>2023-07-22T17:15:27.000Z</published>
+        <published>2023-07-23T01:15:27.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[Apache Shiro 漏洞复现]]></title>
         <id>https://mewhz.com/posts/vul-shiro</id>
         <link href="https://mewhz.com/posts/vul-shiro"/>
-        <updated>2023-07-17T05:53:38.000Z</updated>
-        <content type="html"><![CDATA[<h3>简介</h3>
-<p>Apache Shiro 是一个强大易用的 Java 安全框架,提供了认证、授权、加密和会话管理等功能，Shiro 框架直观、易用、同时也能提供健壮的安全性。</p>
+        <updated>2023-07-17T13:53:38.000Z</updated>
+        <content type="html"><![CDATA[<p>Apache Shiro 是一个强大易用的 Java 安全框架,提供了认证、授权、加密和会话管理等功能，Shiro 框架直观、易用、同时也能提供健壮的安全性。</p>
 <br/><p>访问 <a href="https://mewhz.com/posts/vul-shiro" target="_blank">https://mewhz.com/posts/vul-shiro</a> 阅读全文。</p>]]></content>
         <author>
             <name>星落</name>
             <email>i@valaxy.site</email>
             <uri>https://valaxy.site</uri>
         </author>
-        <published>2023-07-17T05:53:38.000Z</published>
+        <published>2023-07-17T13:53:38.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[局域网共享系统代理]]></title>
         <id>https://mewhz.com/posts/proxy-configuration</id>
         <link href="https://mewhz.com/posts/proxy-configuration"/>
-        <updated>2023-06-25T05:05:13.000Z</updated>
-        <content type="html"><![CDATA[<h3>前言</h3>
-<p>有时会遇到需要配置代理，但是有时候局域网中有很多设备，给每个设备都配置一遍会非常的麻烦，所以采用共享的办法，让局域网中其他设备直接连接即可使用。</p>
+        <updated>2023-06-25T13:05:13.000Z</updated>
+        <content type="html"><![CDATA[<p>有时会遇到需要配置代理，但是有时候局域网中有很多设备，给每个设备都配置一遍会非常的麻烦，所以采用共享的办法，让局域网中其他设备直接连接即可使用。</p>
 <p><strong>注：本文仅介绍配置方法，仅用于技术教学，不涉及任何代理的贩卖等操作。</strong></p>
 <br/><p>访问 <a href="https://mewhz.com/posts/proxy-configuration" target="_blank">https://mewhz.com/posts/proxy-configuration</a> 阅读全文。</p>]]></content>
         <author>
@@ -210,15 +189,14 @@ sudo apt install maven
             <email>i@valaxy.site</email>
             <uri>https://valaxy.site</uri>
         </author>
-        <published>2023-06-25T05:05:13.000Z</published>
+        <published>2023-06-25T13:05:13.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[网络安全学习-Java 反序列化漏洞基础]]></title>
         <id>https://mewhz.com/posts/java-serialization</id>
         <link href="https://mewhz.com/posts/java-serialization"/>
-        <updated>2023-06-15T19:22:28.000Z</updated>
-        <content type="html"><![CDATA[<h3>简介</h3>
-<p>序列化：对象 -&gt; 字符串； 反序列化：字符串 -&gt; 对象；</p>
+        <updated>2023-06-16T03:22:28.000Z</updated>
+        <content type="html"><![CDATA[<p>序列化：对象 -&gt; 字符串； 反序列化：字符串 -&gt; 对象；</p>
 <p>序列化与反序列化主要是用来传输数据，当两个进程进行通信时，可以通过序列化和反序列化来进行传输。</p>
 <p>序列化的好处：</p>
 <ol>
@@ -237,15 +215,14 @@ sudo apt install maven
             <email>i@valaxy.site</email>
             <uri>https://valaxy.site</uri>
         </author>
-        <published>2023-06-15T19:22:28.000Z</published>
+        <published>2023-06-16T03:22:28.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[靶场练习-Lampiao]]></title>
         <id>https://mewhz.com/posts/vulnhub-Lampiao</id>
         <link href="https://mewhz.com/posts/vulnhub-Lampiao"/>
-        <updated>2023-02-23T05:07:58.000Z</updated>
-        <content type="html"><![CDATA[<h3>环境搭建</h3>
-<p>访问官网：<a href="https://www.vulnhub.com/entry/lampiao-1,249/">https://www.vulnhub.com/entry/lampiao-1,249/</a></p>
+        <updated>2023-02-23T13:07:58.000Z</updated>
+        <content type="html"><![CDATA[<p>访问官网：<a href="https://www.vulnhub.com/entry/lampiao-1,249/">https://www.vulnhub.com/entry/lampiao-1,249/</a></p>
 <p>页面向下滑找到 Download 下载靶场；下载成功后，启动虚拟机，单击“打开”选项，找到刚刚下载并解压好的靶场文件，等待导入完成；</p>
 <p>完成后启动靶机，可以看到只有一个登录窗口，此时靶机已经成功运行。</p>
 <p>启动 kali 虚拟机，并同时设置两个机器的网络配置为 NAT 模式；</p>
@@ -256,15 +233,14 @@ sudo apt install maven
             <email>i@valaxy.site</email>
             <uri>https://valaxy.site</uri>
         </author>
-        <published>2023-02-23T05:07:58.000Z</published>
+        <published>2023-02-23T13:07:58.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[网络安全学习-文件上传]]></title>
         <id>https://mewhz.com/posts/security-fileUpload</id>
         <link href="https://mewhz.com/posts/security-fileUpload"/>
-        <updated>2023-02-20T03:30:26.000Z</updated>
-        <content type="html"><![CDATA[<h3>简介</h3>
-<p>文件上传本身是指一个功能，比如用户可以上传头像、上传资料等。如果能够上传文件，则可能存在文件上传的漏洞。</p>
+        <updated>2023-02-20T11:30:26.000Z</updated>
+        <content type="html"><![CDATA[<p>文件上传本身是指一个功能，比如用户可以上传头像、上传资料等。如果能够上传文件，则可能存在文件上传的漏洞。</p>
 <p>任意文件上传漏洞的产生需要满足三个条件：</p>
 <ol>
 <li>文件能被上传；</li>
@@ -277,43 +253,41 @@ sudo apt install maven
             <email>i@valaxy.site</email>
             <uri>https://valaxy.site</uri>
         </author>
-        <published>2023-02-20T03:30:26.000Z</published>
+        <published>2023-02-20T11:30:26.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[网络安全学习-RCE]]></title>
         <id>https://mewhz.com/posts/security-RCE</id>
         <link href="https://mewhz.com/posts/security-RCE"/>
-        <updated>2023-02-09T03:18:31.000Z</updated>
-        <content type="html"><![CDATA[<h3>简介</h3>
-<p>RCE漏洞，可以让攻击者直接向后台服务器远程注入操作系统命令或者代码，从而控制后台系统。因为需求设计,后台有时候也会把用户的输入作为代码的一部分进行执行，也就造成了远程代码执行漏洞。</p>
+        <updated>2023-02-09T11:18:31.000Z</updated>
+        <content type="html"><![CDATA[<p>RCE漏洞，可以让攻击者直接向后台服务器远程注入操作系统命令或者代码，从而控制后台系统。因为需求设计,后台有时候也会把用户的输入作为代码的一部分进行执行，也就造成了远程代码执行漏洞。</p>
 <br/><p>访问 <a href="https://mewhz.com/posts/security-RCE" target="_blank">https://mewhz.com/posts/security-RCE</a> 阅读全文。</p>]]></content>
         <author>
             <name>星落</name>
             <email>i@valaxy.site</email>
             <uri>https://valaxy.site</uri>
         </author>
-        <published>2023-02-09T03:18:31.000Z</published>
+        <published>2023-02-09T11:18:31.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[网络安全学习-SQL注入]]></title>
         <id>https://mewhz.com/posts/security-SQLInjection</id>
         <link href="https://mewhz.com/posts/security-SQLInjection"/>
-        <updated>2023-02-06T07:39:03.000Z</updated>
-        <content type="html"><![CDATA[<h3>简介</h3>
-<p>所谓SQL注入，就是通过把SQL命令插入到Web表单递交或输入域名或页面请求的查询字符串，最终达到欺骗服务器执行恶意的SQL命令。</p>
+        <updated>2023-02-06T15:39:03.000Z</updated>
+        <content type="html"><![CDATA[<p>所谓SQL注入，就是通过把SQL命令插入到Web表单递交或输入域名或页面请求的查询字符串，最终达到欺骗服务器执行恶意的SQL命令。</p>
 <br/><p>访问 <a href="https://mewhz.com/posts/security-SQLInjection" target="_blank">https://mewhz.com/posts/security-SQLInjection</a> 阅读全文。</p>]]></content>
         <author>
             <name>星落</name>
             <email>i@valaxy.site</email>
             <uri>https://valaxy.site</uri>
         </author>
-        <published>2023-02-06T07:39:03.000Z</published>
+        <published>2023-02-06T15:39:03.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[简述浅拷贝与深拷贝]]></title>
         <id>https://mewhz.com/posts/javascript-1</id>
         <link href="https://mewhz.com/posts/javascript-1"/>
-        <updated>2022-04-20T15:19:04.000Z</updated>
+        <updated>2022-04-20T23:19:04.000Z</updated>
         <content type="html"><![CDATA[<h3>数据类型</h3>
 <p>JavaScript 中可以把数据类型简单的分为基本数据类型和引用数据类型。</p>
 <ol>
@@ -326,49 +300,47 @@ sudo apt install maven
             <email>i@valaxy.site</email>
             <uri>https://valaxy.site</uri>
         </author>
-        <published>2022-04-20T15:19:04.000Z</published>
+        <published>2022-04-20T23:19:04.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[vue强制更新视图与数据]]></title>
         <id>https://mewhz.com/posts/vueForceUpdate</id>
         <link href="https://mewhz.com/posts/vueForceUpdate"/>
-        <updated>2022-03-29T14:26:29.000Z</updated>
-        <content type="html"><![CDATA[<h3>vue强制更新视图与数据</h3>
-<p>有时在使用 Vue 时，嵌套过多或者其他缘故没有及时更新视图与数据，可以使用以下代码进行强制更新。</p>
-<pre><code class="language-javascript">this.$forceUpd</code></pre>
+        <updated>2022-03-29T22:26:29.000Z</updated>
+        <content type="html"><![CDATA[<p>有时在使用 Vue 时，嵌套过多或者其他缘故没有及时更新视图与数据，可以使用以下代码进行强制更新。</p>
+<pre><code class="language-javascript">this.$forceUpdate()
+</code></pre>
 <br/><p>访问 <a href="https://mewhz.com/posts/vueForceUpdate" target="_blank">https://mewhz.com/posts/vueForceUpdate</a> 阅读全文。</p>]]></content>
         <author>
             <name>星落</name>
             <email>i@valaxy.site</email>
             <uri>https://valaxy.site</uri>
         </author>
-        <published>2022-03-29T14:26:29.000Z</published>
+        <published>2022-03-29T22:26:29.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[JavaScript模板字符串拼接(ES6新特性)]]></title>
         <id>https://mewhz.com/posts/JavaScript-es6-1</id>
         <link href="https://mewhz.com/posts/JavaScript-es6-1"/>
-        <updated>2022-03-10T11:14:51.000Z</updated>
+        <updated>2022-03-10T19:14:51.000Z</updated>
         <content type="html"><![CDATA[<h3>ES6之前拼接字符串</h3>
 <pre><code class="language-javascript">let url = &quot;mewhz&quot;;
 let string = '网址：' + url + '.com';
-console.log(str</code></pre>
+console.l</code></pre>
 <br/><p>访问 <a href="https://mewhz.com/posts/JavaScript-es6-1" target="_blank">https://mewhz.com/posts/JavaScript-es6-1</a> 阅读全文。</p>]]></content>
         <author>
             <name>星落</name>
             <email>i@valaxy.site</email>
             <uri>https://valaxy.site</uri>
         </author>
-        <published>2022-03-10T11:14:51.000Z</published>
+        <published>2022-03-10T19:14:51.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[mysql修改主键乱序指令]]></title>
         <id>https://mewhz.com/posts/MySQL-id-auto</id>
         <link href="https://mewhz.com/posts/MySQL-id-auto"/>
-        <updated>2022-01-28T10:25:20.000Z</updated>
-        <content type="html"><![CDATA[<h3>前言</h3>
-<hr>
-<p>经常在测试时修改 MySQL 中数据，导致主键序号变乱，对于强迫症来说有些难受。</p>
+        <updated>2022-01-28T18:25:20.000Z</updated>
+        <content type="html"><![CDATA[<p>经常在测试时修改 MySQL 中数据，导致主键序号变乱，对于强迫症来说有些难受。</p>
 <p>这个指令可以完美解决乱序问题。</p>
 <br/><p>访问 <a href="https://mewhz.com/posts/MySQL-id-auto" target="_blank">https://mewhz.com/posts/MySQL-id-auto</a> 阅读全文。</p>]]></content>
         <author>
@@ -376,18 +348,18 @@ console.log(str</code></pre>
             <email>i@valaxy.site</email>
             <uri>https://valaxy.site</uri>
         </author>
-        <published>2022-01-28T10:25:20.000Z</published>
+        <published>2022-01-28T18:25:20.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[JavaScript导入本地JS文件中的函数]]></title>
         <id>https://mewhz.com/posts/JavaScript-export</id>
         <link href="https://mewhz.com/posts/JavaScript-export"/>
-        <updated>2022-01-01T16:30:39.000Z</updated>
+        <updated>2022-01-02T00:30:39.000Z</updated>
         <content type="html"><![CDATA[<h3>HTML代码</h3>
 <ul>
 <li>首先创建对应的 html，并设置一些标签；</li>
 <li>导入 JQuery 文件和自定义 JavaScript 文件；</li>
-<li>在导入的 JavaScript 文件时，设置 type</li>
+<li>在导入的 JavaScript 文件时，设置</li>
 </ul>
 <br/><p>访问 <a href="https://mewhz.com/posts/JavaScript-export" target="_blank">https://mewhz.com/posts/JavaScript-export</a> 阅读全文。</p>]]></content>
         <author>
@@ -395,93 +367,90 @@ console.log(str</code></pre>
             <email>i@valaxy.site</email>
             <uri>https://valaxy.site</uri>
         </author>
-        <published>2022-01-01T16:30:39.000Z</published>
+        <published>2022-01-02T00:30:39.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[实现简单的前后端分离]]></title>
         <id>https://mewhz.com/posts/Front-and-rear-ends</id>
         <link href="https://mewhz.com/posts/Front-and-rear-ends"/>
-        <updated>2021-12-31T04:11:51.000Z</updated>
+        <updated>2021-12-31T12:11:51.000Z</updated>
         <content type="html"><![CDATA[<h3>HTML 代码</h3>
 <ul>
 <li>首先创建对应的 html，并在需要的显示数据的位置设置 id；</li>
 <li>导入 JQuery 和 js 文件；</li>
 </ul>
-<pre><code class="language-html">&lt;!--test.html--&gt;
-&lt;!DOC</code></pre>
+<pre><code class="language-html">&lt;!--test.html--</code></pre>
 <br/><p>访问 <a href="https://mewhz.com/posts/Front-and-rear-ends" target="_blank">https://mewhz.com/posts/Front-and-rear-ends</a> 阅读全文。</p>]]></content>
         <author>
             <name>星落</name>
             <email>i@valaxy.site</email>
             <uri>https://valaxy.site</uri>
         </author>
-        <published>2021-12-31T04:11:51.000Z</published>
+        <published>2021-12-31T12:11:51.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[修改Maven仓库为阿里云]]></title>
         <id>https://mewhz.com/posts/Maven-aliyun</id>
         <link href="https://mewhz.com/posts/Maven-aliyun"/>
-        <updated>2021-11-23T16:33:01.000Z</updated>
+        <updated>2021-11-24T00:33:01.000Z</updated>
         <content type="html"><![CDATA[<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;settings
-    xmlns=&quot;http://maven.apache.org/POM/4.0.</code></pre>
+    xmlns=&quot;http://maven.apache.org/POM/</code></pre>
 <br/><p>访问 <a href="https://mewhz.com/posts/Maven-aliyun" target="_blank">https://mewhz.com/posts/Maven-aliyun</a> 阅读全文。</p>]]></content>
         <author>
             <name>星落</name>
             <email>i@valaxy.site</email>
             <uri>https://valaxy.site</uri>
         </author>
-        <published>2021-11-23T16:33:01.000Z</published>
+        <published>2021-11-24T00:33:01.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[快速幂]]></title>
         <id>https://mewhz.com/posts/pows</id>
         <link href="https://mewhz.com/posts/pows"/>
-        <updated>2021-11-04T10:00:48.000Z</updated>
+        <updated>2021-11-04T18:00:48.000Z</updated>
         <content type="html"><![CDATA[<h3>快速幂</h3>
 <pre><code class="language-cpp">#include &lt;iostream&gt;
 using namespace std;
 typedef long long ll;
-ll pow(ll a, ll b,</code></pre>
+ll pow(ll a, </code></pre>
 <br/><p>访问 <a href="https://mewhz.com/posts/pows" target="_blank">https://mewhz.com/posts/pows</a> 阅读全文。</p>]]></content>
         <author>
             <name>星落</name>
             <email>i@valaxy.site</email>
             <uri>https://valaxy.site</uri>
         </author>
-        <published>2021-11-04T10:00:48.000Z</published>
+        <published>2021-11-04T18:00:48.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[Python爬取斗破苍穹]]></title>
         <id>https://mewhz.com/posts/Python-reptile-1</id>
         <link href="https://mewhz.com/posts/Python-reptile-1"/>
-        <updated>2021-07-12T04:46:48.000Z</updated>
-        <content type="html"><![CDATA[<h3>前言</h3>
-<hr>
-<p>由于最近迷上了斗破苍穹，想要重温一下，但似乎找不到无错别字的版本，于是只好自己动手..</p>
+        <updated>2021-07-12T12:46:48.000Z</updated>
+        <content type="html"><![CDATA[<p>由于最近迷上了斗破苍穹，想要重温一下，但似乎找不到无错别字的版本，于是只好自己动手..</p>
 <br/><p>访问 <a href="https://mewhz.com/posts/Python-reptile-1" target="_blank">https://mewhz.com/posts/Python-reptile-1</a> 阅读全文。</p>]]></content>
         <author>
             <name>星落</name>
             <email>i@valaxy.site</email>
             <uri>https://valaxy.site</uri>
         </author>
-        <published>2021-07-12T04:46:48.000Z</published>
+        <published>2021-07-12T12:46:48.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[高精度四则运算]]></title>
         <id>https://mewhz.com/posts/high-accuracy</id>
         <link href="https://mewhz.com/posts/high-accuracy"/>
-        <updated>2021-07-02T16:37:11.000Z</updated>
+        <updated>2021-07-03T00:37:11.000Z</updated>
         <content type="html"><![CDATA[<h3>高精度加高精度(向量法)</h3>
 <pre><code class="language-cpp">#include &lt;bits/stdc++.h&gt;
 using namespace std;
-vector&lt;int&gt; add(vector&lt;in</code></pre>
+vector&lt;int&gt; add(vector</code></pre>
 <br/><p>访问 <a href="https://mewhz.com/posts/high-accuracy" target="_blank">https://mewhz.com/posts/high-accuracy</a> 阅读全文。</p>]]></content>
         <author>
             <name>星落</name>
             <email>i@valaxy.site</email>
             <uri>https://valaxy.site</uri>
         </author>
-        <published>2021-07-02T16:37:11.000Z</published>
+        <published>2021-07-03T00:37:11.000Z</published>
     </entry>
 </feed>

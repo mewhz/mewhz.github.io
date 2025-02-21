@@ -49,6 +49,9 @@ export default defineValaxyConfig<UserThemeConfig>({
   ],
 
   themeConfig: {
+
+    // type: 'strato',
+
     banner: {
       enable: true,
       title: '星星得不到爱火',
@@ -59,7 +62,8 @@ export default defineValaxyConfig<UserThemeConfig>({
 
     bg_image : {
       enable: true,
-      url: 'https://pic.mewhz.com/img/bg2.jpeg',
+      // url: 'https://pic.mewhz.com/img/bg2.jpeg',
+      url: '/20240925002236.png',
       // opacity: 0.2,
     },
 
