@@ -14,12 +14,12 @@
   },
   "dependencies": {
     "@iconify-json/ri": "^1.2.0",
-    "valaxy": "0.22.10",
+    "valaxy": "0.22.12",
     "valaxy-addon-bangumi": "^0.2.2",
     "valaxy-addon-components": "^0.1.0",
     "valaxy-addon-waline": "^0.2.0",
     "valaxy-blog": "link:",
-    "valaxy-theme-yun": "^0.22.10"
+    "valaxy-theme-yun": "^0.22.12"
   },
   "devDependencies": {
     "typescript": "^5.5.4"
