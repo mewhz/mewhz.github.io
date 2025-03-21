@@ -13,9 +13,10 @@ type: "about"
 
 ### 博客折腾日记
 
+* **2025-02-24:** [Cloudflare](https://www.cloudflare.com) 配置 DNS 域名解析
 * **2024-10-12:** 腾讯云备案接入通过，配置二级域名 memos.mewhz.com
 * **2024-09-28:** 更新博客自定义配置，写下博客折腾日记
-* **2024-09-05:** bangumi 页面新增自定义数据源，数据存放于 [val.town](https://www.val.town/)
+* **2024-09-05:** bangumi 页面新增自定义数据源，数据存放于 [val.town](https://www.val.town)
 * **2024-05-17:** 域名转移到腾讯云下并续费一年
 * **2024-04-26:** 新增 [bangumi](https://mewhz.com/bangumi) 追番页面
 * **2024-03-29:** 托管到 [vercel](https://vercel.com/)
@@ -33,7 +34,7 @@ type: "about"
 * **2020-04-09:** 尝试 JSDelivr 作为 CDN 为静态资源加速
 * **2020-01-29:** 购买免费的 SSL 证书，博客增加 https 支持
 * **2019-10-06:** 因为喜欢 [Sakura](https://github.com/mashirozx/sakura) 的博客主题，所以更换博客引擎为 [Wordpress](https://github.com/WordPress/WordPress)
-* **2019-09-20:** 在学校大佬的推荐下，使用 [又拍云](https://www.upyun.com/) 做 CDN，加入又拍云联盟
+* **2019-09-20:** 在学校大佬的推荐下，使用 [又拍云](https://www.upyun.com) 做 CDN，加入又拍云联盟
 * **2019-06-25:** 域名备案通过
 * **2019-06-01:** 域名开始备案
 * **2019-05-31:** 使用 [Typecho](https://github.com/typecho/typecho) 作为博客引擎，同时 [G](https://github.com/youranreus/G) 作为博客主题
