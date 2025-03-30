@@ -24,7 +24,7 @@ export default defineValaxyConfig<UserThemeConfig>({
       bgmUid: '872987',
       customCss: 
       `      
-        .bbc-bangumi-label { width: 30%; }
+        .bbc-bangumi-label { width: 30%; padding: 0px 11px !important; }
         .bbc-bangumi-labels { margin-top: 10px; }
         div > .bbc-tabs:nth-of-type(1) { display: none; }
         .bbc-tabs:nth-of-type(3) { display: none; }
