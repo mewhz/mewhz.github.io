@@ -55,6 +55,7 @@ declare module 'vue-router/auto-routes' {
     '/posts/vul-shiro': RouteRecordInfo<'/posts/vul-shiro', '/posts/vul-shiro', Record<never, never>, Record<never, never>>,
     '/posts/vulnhub-Lampiao': RouteRecordInfo<'/posts/vulnhub-Lampiao', '/posts/vulnhub-Lampiao', Record<never, never>, Record<never, never>>,
     '/posts/vx-application-yakit': RouteRecordInfo<'/posts/vx-application-yakit', '/posts/vx-application-yakit', Record<never, never>, Record<never, never>>,
+    '/posts/yakit-mumu-capture': RouteRecordInfo<'/posts/yakit-mumu-capture', '/posts/yakit-mumu-capture', Record<never, never>, Record<never, never>>,
     '/tags/': RouteRecordInfo<'/tags/', '/tags', Record<never, never>, Record<never, never>>,
   }
 }
