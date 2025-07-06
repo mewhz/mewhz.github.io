@@ -23,7 +23,7 @@ export default defineSiteConfig({
   // 主标题
   description: '从前从前有个人爱你很久',
   // 站点图标
-  favicon: 'https://pic.mewhz.com/img/favicon.ico',
+  favicon: 'http://pic.mewhz.com/img/favicon.ico',
   // 社交图标
   social: [
     {

@@ -10,7 +10,7 @@ tags:
 
 访问网址下载 Linux 版本的 Java 1.8：https://www.oracle.com/java/technologies/downloads/#java8
 
-![image-20230722185014385](https://pic.mewhz.com/blog/image-20230722185014385.png)
+![image-20230722185014385](http://pic.mewhz.com/blog/image-20230722185014385.png)
 
 下载成功后上传到 Linux 并解压到当前目录：
 
@@ -38,4 +38,4 @@ update-alternatives --config javac
 
 安装成功~
 
-![image-20230722190017802](https://pic.mewhz.com/blog/image-20230722190017802.png)
+![image-20230722190017802](http://pic.mewhz.com/blog/image-20230722190017802.png)

@@ -536,7 +536,7 @@ const customData = {
         name: "不良之年少轻狂",
         nameCN: "不良之年少轻狂",
         summary: "不良少年，热血轻狂！ 在初中被同学们欺负、排挤了三年的王浩，以为来到城南高中会有所改变，谁知道，在这里却又碰到了初中时的老对头…… 不过这一次，王浩决定改变自己的命运。见证一个原本懦弱无能的好学生，一步步崛起为“坏蛋”的成长史！",
-        cover: "https://pic.mewhz.com/bangumi/blznsqk.jpg",
+        cover: "http://pic.mewhz.com/bangumi/blznsqk.jpg",
         url: "",
         labels: [
           {
@@ -636,7 +636,7 @@ const customData = {
         name: "拒入黑道：和不良少年战斗的日子",
         nameCN: "拒入黑道：和不良少年战斗的日子",
         summary: "有人的地方就有江湖，每一个少年心中自有一个江湖！！当面对黑暗，我们是忍气吞声，还是放手一搏？这里记录了青春和热血，誓言和契约……所有“不良系列”的前传。不良系列，从这里开始……",
-        cover: "https://pic.mewhz.com/bangumi/jrhd.webp",
+        cover: "http://pic.mewhz.com/bangumi/jrhd.webp",
         url: "",
         labels: [
           {
@@ -728,7 +728,7 @@ const customData = {
         name: "龙族",
         nameCN: "龙族",
         summary: "他以为他将这样度过一生，他以为他始终只是个衰小孩。但是，一封来自卡塞尔学院的录取通知书改变了他的一生。云层里透出神秘的吟唱：你也有神奇的父母，你也有热血的同伴，你的血管里流动着龙族的血液。而你的目标将是 —— 屠龙。",
-        cover: "https://pic.mewhz.com/bangumi/lz.jpg",
+        cover: "http://pic.mewhz.com/bangumi/lz.jpg",
         url: "https://book.douban.com/subject/4737329/",
         labels: [
           {

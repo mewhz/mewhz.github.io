@@ -62,7 +62,7 @@ export default defineValaxyConfig<UserThemeConfig>({
 
     bg_image : {
       enable: true,
-      // url: 'https://pic.mewhz.com/img/bg2.jpeg',
+      // url: 'http://pic.mewhz.com/img/bg2.jpeg',
       url: '/20240925002236.png',
       // opacity: 0.2,
     },

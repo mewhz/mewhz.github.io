@@ -47,21 +47,21 @@ Shiro 1.2.4 之前版本使用的是硬编码，AES 加密的密钥默认在代�
 
 vulhub 环境搭建成功后，访问 http://youIp:8080
 
-![image-20230714110350951](https://pic.mewhz.com/blog/image-20230714110350951.png)
+![image-20230714110350951](http://pic.mewhz.com/blog/image-20230714110350951.png)
 
 输入用户名和密码，单击登录后使用 Burp Suite 抓包判断是否使用 Shiro 框架
 
-![image-20230714105856852](https://pic.mewhz.com/blog/image-20230714105856852.png)
+![image-20230714105856852](http://pic.mewhz.com/blog/image-20230714105856852.png)
 
 使用 Shiro-Attack 工具：https://github.com/SummerSec/ShiroAttack2
 
 输入目标地址，分别单击爆破密钥和爆破利用链及回显
 
-![image-20230714111439454](https://pic.mewhz.com/blog/image-20230714111439454.png)
+![image-20230714111439454](http://pic.mewhz.com/blog/image-20230714111439454.png)
 
 执行 whoami 命令，成功执行~
 
-![image-20230714111627378](https://pic.mewhz.com/blog/image-20230714111627378.png)
+![image-20230714111627378](http://pic.mewhz.com/blog/image-20230714111627378.png)
 
 ---
 
@@ -98,9 +98,9 @@ docker run -p 8080:8080 -d shiro-721
 
 登录测试用户，获取合法的 Cookie (勾选 Remember Me)，并使用 Burp Suite 进行抓包
 
-![image-20230716181109876](https://pic.mewhz.com/blog/image-20230716181109876.png)
+![image-20230716181109876](http://pic.mewhz.com/blog/image-20230716181109876.png)
 
- 登录时会发送两个包，第一个包里面没有 rememberMe 字段，第二个中会包含需要的信息![image-20230716181322233](https://pic.mewhz.com/blog/image-20230716181322233.png)
+ 登录时会发送两个包，第一个包里面没有 rememberMe 字段，第二个中会包含需要的信息![image-20230716181322233](http://pic.mewhz.com/blog/image-20230716181322233.png)
 
 下载 ysoserial 工具：https://github.com/frohoff/ysoserial/
 
@@ -202,9 +202,9 @@ python2 shiro_exp.py http://192.168.1.8:8080/login.jsp Po3HKTou9qC7ZlARJLzVoupk3
 
 等待较长的时间跑完后，将生成的 remember Me 复制到 Burp Suite 并重新发包
 
-![image-20230717100931756](https://pic.mewhz.com/blog/image-20230717100931756.png)
+![image-20230717100931756](http://pic.mewhz.com/blog/image-20230717100931756.png)
 
-![image-20230717101054293](https://pic.mewhz.com/blog/image-20230717101054293.png)
+![image-20230717101054293](http://pic.mewhz.com/blog/image-20230717101054293.png)
 
 发送完成后进入 Docker 容器中查看文件是否创建成功
 
@@ -213,7 +213,7 @@ docker exec -it e00 /bin/bash
 # 进入容器
 ```
 
-![image-20230717101649765](https://pic.mewhz.com/blog/image-20230717101649765.png)
+![image-20230717101649765](http://pic.mewhz.com/blog/image-20230717101649765.png)
 
 创建成功~
 
@@ -240,8 +240,8 @@ docker compose up -d
 
 若是直接请求 /admin/，会被拦截，进而重定向到登录页面
 
-![image-20230717135113899](https://pic.mewhz.com/blog/image-20230717135113899.png)
+![image-20230717135113899](http://pic.mewhz.com/blog/image-20230717135113899.png)
 
 构造恶意请求`/xxx/..;/admin/`，即可绕过权限校验，访问到管理页面
 
-![image-20230717135228802](https://pic.mewhz.com/blog/image-20230717135228802.png)
+![image-20230717135228802](http://pic.mewhz.com/blog/image-20230717135228802.png)

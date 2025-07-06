@@ -9,7 +9,7 @@ type: "about"
 * 喜欢随便折腾一些有趣的东西。
 
  **一切都会越来越好✨** 
- ![](https://pic.mewhz.com/img/266ED628A95565DFAEDFF46EA257ABC9.gif)
+ ![](http://pic.mewhz.com/img/266ED628A95565DFAEDFF46EA257ABC9.gif)
 
 ### 博客折腾日记
 
