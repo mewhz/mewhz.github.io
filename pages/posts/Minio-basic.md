@@ -62,25 +62,25 @@ docker pull minio/minio
 
 访问 ip: 9090，输入用户名/密码：minioadmin/minioadmin。
 
-![image-20240916162705617](http://pic.mewhz.com/blog/image-20240916162705617.png)
+![image-20240916162705617](https://pic.mewhz.com/blog/image-20240916162705617.png)
 
 #### 5. 创建 Bucket 测试
 
 单击右侧的 **Buckets** 选择 **Create a Bucket** 创建存储桶。
 
-![image-20240916162908317](http://pic.mewhz.com/blog/image-20240916162908317.png)
+![image-20240916162908317](https://pic.mewhz.com/blog/image-20240916162908317.png)
 
 设置存储桶的访问策略为 **public**：
 
-![image-20240916163716657](http://pic.mewhz.com/blog/image-20240916163716657.png)
+![image-20240916163716657](https://pic.mewhz.com/blog/image-20240916163716657.png)
 
 名称自定义，这里叫作 **test** 。单击右侧的 **Object Browser**，选择刚刚创建的 test 存储桶；单击右侧的 **upload** 上传一张图片。
 
-![image-20240916163357921](http://pic.mewhz.com/blog/image-20240916163357921.png)
+![image-20240916163357921](https://pic.mewhz.com/blog/image-20240916163357921.png)
 
 由于刚刚设置了访问策略为 public，所以可以直接使用 **ip: 9000/存储桶名称/文件名称** 访问查看图片
 
-![image-20240916163933733](http://pic.mewhz.com/blog/image-20240916163933733.png)
+![image-20240916163933733](https://pic.mewhz.com/blog/image-20240916163933733.png)
 
 ### 二、Spring Boot 集成 Minio
 
@@ -241,7 +241,7 @@ public boolean uploadFile(@RequestParam MultipartFile multipartFile) {
 
 Apifox 测试
 
-![image-20240916224922381](http://pic.mewhz.com/blog/image-20240916224922381.png)
+![image-20240916224922381](https://pic.mewhz.com/blog/image-20240916224922381.png)
 
 #### 7. 判断存储桶是否存在
 
@@ -276,9 +276,9 @@ public boolean isExistBucket(@RequestParam String bucketName) {
 
 Apifox 测试
 
-![image-20240916225741432](http://pic.mewhz.com/blog/image-20240916225741432.png)
+![image-20240916225741432](https://pic.mewhz.com/blog/image-20240916225741432.png)
 
-![image-20240916225812003](http://pic.mewhz.com/blog/image-20240916225812003.png)
+![image-20240916225812003](https://pic.mewhz.com/blog/image-20240916225812003.png)
 
 
 
@@ -322,7 +322,7 @@ public boolean createBucket(@RequestParam String bucketName) {
 
 Apifox 测试
 
-![image-20240916230159779](http://pic.mewhz.com/blog/image-20240916230159779.png)
+![image-20240916230159779](https://pic.mewhz.com/blog/image-20240916230159779.png)
 
 #### 9. 删除存储桶
 
@@ -364,7 +364,7 @@ public boolean removeBucket(@RequestParam String bucketName) {
 
 Apifox 测试
 
-![image-20240916230427187](http://pic.mewhz.com/blog/image-20240916230427187.png)
+![image-20240916230427187](https://pic.mewhz.com/blog/image-20240916230427187.png)
 
 #### 10. 获取所有存储桶名称
 
@@ -400,7 +400,7 @@ public Object getAllBucketName() {
 
 Apifox 测试
 
-![image-20240916233949794](http://pic.mewhz.com/blog/image-20240916233949794.png)
+![image-20240916233949794](https://pic.mewhz.com/blog/image-20240916233949794.png)
 
 #### 11. 判断文件是否存在
 
@@ -445,9 +445,9 @@ public boolean isExistObject(@RequestParam String bucketName, @RequestParam Stri
 
 Apifox 测试
 
-![image-20240916234239139](http://pic.mewhz.com/blog/image-20240916234239139.png)
+![image-20240916234239139](https://pic.mewhz.com/blog/image-20240916234239139.png)
 
-![image-20240916234249946](http://pic.mewhz.com/blog/image-20240916234249946.png)
+![image-20240916234249946](https://pic.mewhz.com/blog/image-20240916234249946.png)
 
 #### 12. 删除存储桶中的文件
 
@@ -491,7 +491,7 @@ public boolean removeObject(@RequestParam String bucketName, @RequestParam Strin
 
 Apifox 测试
 
-![image-20240917220903056](http://pic.mewhz.com/blog/image-20240917220903056.png)
+![image-20240917220903056](https://pic.mewhz.com/blog/image-20240917220903056.png)
 
 #### 13. 获取存储桶中的所有文件名称
 
@@ -537,7 +537,7 @@ public List<String> selectAllObjectList(@RequestParam String bucketName) {
 
 Apifox 测试
 
-![image-20240917222958292](http://pic.mewhz.com/blog/image-20240917222958292.png)
+![image-20240917222958292](https://pic.mewhz.com/blog/image-20240917222958292.png)
 
 #### 14. 文件下载
 
@@ -579,4 +579,4 @@ public String downloadObject(@RequestParam String bucketName, @RequestParam Stri
 
 Apifox 测试
 
-![image-20240917225636809](http://pic.mewhz.com/blog/image-20240917225636809.png)
+![image-20240917225636809](https://pic.mewhz.com/blog/image-20240917225636809.png)

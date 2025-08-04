@@ -123,7 +123,7 @@ public class UnSerializationTest {
 
 先运行 SerializationTest 在运行 UnSerializationTest 发现成功输出对象的信息，且本地保存了一个 person.ser 的文件。
 
-![image-20230616034048351](http://pic.mewhz.com/blog/image-20230616034048351.png)
+![image-20230616034048351](https://pic.mewhz.com/blog/image-20230616034048351.png)
 
 ### 反序列化安全漏洞产生的原因
 
@@ -172,7 +172,7 @@ public class Person implements Serializable {
 
 同样先运行 SerializationTest 在运行 UnSerializationTest，发现成功弹出计算器软件。
 
-![image-20230616034903268](http://pic.mewhz.com/blog/image-20230616034903268.png)
+![image-20230616034903268](https://pic.mewhz.com/blog/image-20230616034903268.png)
 
 ### URLDNS 利用链
 
@@ -180,31 +180,31 @@ URLDNS 链是 Java 众多利用链中最简单的一条利用链。该利用链�
 
 反序列化入口是在 HashMap 的 readObject 方法，该类重写了 readObject，此时反序列化时会调用该方法
 
-![image-20230619102251727](http://pic.mewhz.com/blog/image-20230619102251727.png)
+![image-20230619102251727](https://pic.mewhz.com/blog/image-20230619102251727.png)
 
 找到 readObject 方法的，这个方法会调用本类的 hash 方法
 
-![image-20230619103417484](http://pic.mewhz.com/blog/image-20230619103417484.png)
+![image-20230619103417484](https://pic.mewhz.com/blog/image-20230619103417484.png)
 
 hash 方法中，在这个方法会调用 key 的 hashCode 方法，其中 key 是 Object 类，若传递的类重写了 hashCode 方法则调用类的 hashCode 方法
 
-![image-20230619104923169](http://pic.mewhz.com/blog/image-20230619104923169.png)
+![image-20230619104923169](https://pic.mewhz.com/blog/image-20230619104923169.png)
 
 打开 java.net.URL 类的 hashCode 方法，会调用 handler 属性的 hashCode 方法
 
-![image-20230619110323914](http://pic.mewhz.com/blog/image-20230619110323914.png)
+![image-20230619110323914](https://pic.mewhz.com/blog/image-20230619110323914.png)
 
 handler 定义来自于 URLStreamHandler ，所以会调用该类的 hashCode 方法
 
-![image-20230619110706382](http://pic.mewhz.com/blog/image-20230619110706382.png)
+![image-20230619110706382](https://pic.mewhz.com/blog/image-20230619110706382.png)
 
 来到 URLStreamHandler 的 hashCode 方法，其中调用 getHostAddress 方法，该方法执行后会进行域名到IP 地址的解析请求
 
-![image-20230619111515955](http://pic.mewhz.com/blog/image-20230619111515955.png)
+![image-20230619111515955](https://pic.mewhz.com/blog/image-20230619111515955.png)
 
 访问 http://dnslog.cn/ 申请一个域名地址
 
-![image-20230619230442787](http://pic.mewhz.com/blog/image-20230619230442787.png)
+![image-20230619230442787](https://pic.mewhz.com/blog/image-20230619230442787.png)
 
 重新修改 SerializationTest 和 UnSerializationTest 类
 
@@ -262,11 +262,11 @@ public class UnSerializationTest {
 
 运行 SerializationTest 类后，返回 dnslog 网站，发现这时就已经发送了请求；
 
-![image-20230619230608409](http://pic.mewhz.com/blog/image-20230619230608409.png)
+![image-20230619230608409](https://pic.mewhz.com/blog/image-20230619230608409.png)
 
 这是因为 HashMap 在执行 put 方法时会调用 URL 类的 hashCode 方法，此时若 hashCode 变量不等于 -1 时，会直接返回 hashCode，反之则会执行 handler 的 hashCode 方法，进而发送请求。
 
-![image-20230619230231390](http://pic.mewhz.com/blog/image-20230619230231390.png)
+![image-20230619230231390](https://pic.mewhz.com/blog/image-20230619230231390.png)
 
 再运行 UnSerializationTest 类后，返回 dnslog 网站，并没有新的请求出现；
 

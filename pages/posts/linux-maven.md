@@ -15,6 +15,6 @@ sudo apt install maven
 # 安装 Maven
 ```
 
-![image-20230722192654401](http://pic.mewhz.com/blog/image-20230722192654401.png)
+![image-20230722192654401](https://pic.mewhz.com/blog/image-20230722192654401.png)
 
 安装成功~

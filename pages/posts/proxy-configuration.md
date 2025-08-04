@@ -72,15 +72,15 @@ source /etc/profile
 
 打开本机的控制面板 -> windows Defender 防火墙
 
-![image-20230625130548866](http://pic.mewhz.com/blog/image-20230625130548866.png)
+![image-20230625130548866](https://pic.mewhz.com/blog/image-20230625130548866.png)
 
 高级设置
 
-![image-20230625130604171](http://pic.mewhz.com/blog/image-20230625130604171.png)
+![image-20230625130604171](https://pic.mewhz.com/blog/image-20230625130604171.png)
 
 入站规则中找到 "文件和打印机共享(回显请求 - ICMPv4-In)" 启用该规则
 
-![image-20230625130645932](http://pic.mewhz.com/blog/image-20230625130645932.png)
+![image-20230625130645932](https://pic.mewhz.com/blog/image-20230625130645932.png)
 
 再次回到 Linux 命令行，等待大概 1 分钟，再次访问 cip.cc 发现 IP 地址已经发生变化。
 

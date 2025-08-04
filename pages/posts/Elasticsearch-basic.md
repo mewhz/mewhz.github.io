@@ -34,7 +34,7 @@ ES 是一款分布式、RESTful 风格的搜索和数据分析引擎，它可以
 
 访问 http://127.0.0.1:9200/ 可看到 ES 默认的信息。
 
-![image-20240401111230797](http://pic.mewhz.com/blog/image-20240401111230797.png)
+![image-20240401111230797](https://pic.mewhz.com/blog/image-20240401111230797.png)
 
 >若访问 9200 失败，提示连接被重置；修改 **confing/elasticsearch.yml** 文件；
 >
@@ -66,7 +66,7 @@ Kibana 是 Elasticsearch 的可视化平台，需要先启动 Elasticsearch。
 
 访问 http://localhost:5601/ 可以看到以下内容。
 
-![image-20240401103017879](http://pic.mewhz.com/blog/image-20240401103017879.png)
+![image-20240401103017879](https://pic.mewhz.com/blog/image-20240401103017879.png)
 
 ### 三、安装 IK 分词器
 
@@ -107,7 +107,7 @@ GET _analyze
 }
 ```
 
-![image-20240401145244259](http://pic.mewhz.com/blog/image-20240401145244259.png)
+![image-20240401145244259](https://pic.mewhz.com/blog/image-20240401145244259.png)
 
 最细切分模式
 
@@ -119,17 +119,17 @@ GET _analyze
 }
 ```
 
-![image-20240401145519743](http://pic.mewhz.com/blog/image-20240401145519743.png)
+![image-20240401145519743](https://pic.mewhz.com/blog/image-20240401145519743.png)
 
 #### 2. 扩展词词典
 
 在 IK 分词器的 **config** 目录下，创建 **my.dic** 加入要配置的词组；
 
-![image-20240401151418895](http://pic.mewhz.com/blog/image-20240401151418895.png)
+![image-20240401151418895](https://pic.mewhz.com/blog/image-20240401151418895.png)
 
 在 **config/IKAnalyzer.cfg.xml** 中加入扩展词词典的名称：
 
-![image-20240401151718110](http://pic.mewhz.com/blog/image-20240401151718110.png)
+![image-20240401151718110](https://pic.mewhz.com/blog/image-20240401151718110.png)
 
 重启 ES 发送请求进行测试。
 
@@ -143,21 +143,21 @@ GET _analyze
 
 **默认词典效果**
 
-![image-20240401154804914](http://pic.mewhz.com/blog/image-20240401154804914.png)
+![image-20240401154804914](https://pic.mewhz.com/blog/image-20240401154804914.png)
 
 **扩展词典效果**
 
-![image-20240401154600720](http://pic.mewhz.com/blog/image-20240401154600720.png)
+![image-20240401154600720](https://pic.mewhz.com/blog/image-20240401154600720.png)
 
 #### 3. 停用词词典
 
 修改刚刚的 **my.dic**：
 
-![image-20240401164555020](http://pic.mewhz.com/blog/image-20240401164555020.png)
+![image-20240401164555020](https://pic.mewhz.com/blog/image-20240401164555020.png)
 
 在 **config/IKAnalyzer.cfg.xml** 中加入停用词词典的名称
 
-![image-20240401164611372](http://pic.mewhz.com/blog/image-20240401164611372.png)
+![image-20240401164611372](https://pic.mewhz.com/blog/image-20240401164611372.png)
 
 重启 ES 发送请求进行测试。
 
@@ -171,7 +171,7 @@ GET _analyze
 
 **停用词典效果**
 
-![image-20240401164903283](http://pic.mewhz.com/blog/image-20240401164903283.png)
+![image-20240401164903283](https://pic.mewhz.com/blog/image-20240401164903283.png)
 
 ### 五、ES 的简单使用
 
@@ -210,7 +210,7 @@ put /student // student 索引名称
 }
 ```
 
-![image-20240404230032522](http://pic.mewhz.com/blog/image-20240404230032522.png)
+![image-20240404230032522](https://pic.mewhz.com/blog/image-20240404230032522.png)
 
 #### 2. 查看索引
 
@@ -220,7 +220,7 @@ put /student // student 索引名称
 get /student/_mappings
 ```
 
-![image-20240404230257741](http://pic.mewhz.com/blog/image-20240404230257741.png)
+![image-20240404230257741](https://pic.mewhz.com/blog/image-20240404230257741.png)
 
 **查看索引**
 
@@ -230,7 +230,7 @@ get /student/_mappings
 get /student
 ```
 
-![image-20240404230350257](http://pic.mewhz.com/blog/image-20240404230350257.png)
+![image-20240404230350257](https://pic.mewhz.com/blog/image-20240404230350257.png)
 
 #### 3. 写入文档
 
@@ -252,7 +252,7 @@ put /student/_doc/001
 }
 ```
 
-![image-20240404231153255](http://pic.mewhz.com/blog/image-20240404231153255.png)
+![image-20240404231153255](https://pic.mewhz.com/blog/image-20240404231153255.png)
 
 ```json
 post /student/_doc/
@@ -263,7 +263,7 @@ post /student/_doc/
 }
 ```
 
-![image-20240404231230573](http://pic.mewhz.com/blog/image-20240404231230573.png)
+![image-20240404231230573](https://pic.mewhz.com/blog/image-20240404231230573.png)
 
 #### 4. 获取文档
 
@@ -294,7 +294,7 @@ get /student/_doc/001
 }
 ```
 
-![image-20240405211058080](http://pic.mewhz.com/blog/image-20240405211058080.png)
+![image-20240405211058080](https://pic.mewhz.com/blog/image-20240405211058080.png)
 
 ```json
 get /student/_source/001
@@ -306,7 +306,7 @@ get /student/_source/001
 }
 ```
 
-![image-20240405211139537](http://pic.mewhz.com/blog/image-20240405211139537.png)
+![image-20240405211139537](https://pic.mewhz.com/blog/image-20240405211139537.png)
 
 #### 5. 搜索文档
 
@@ -324,7 +324,7 @@ post /student/_search
 }
 ```
 
-![image-20240405212940932](http://pic.mewhz.com/blog/image-20240405212940932.png)
+![image-20240405212940932](https://pic.mewhz.com/blog/image-20240405212940932.png)
 
 ```json
 post /student/_search
@@ -337,7 +337,7 @@ post /student/_search
 }
 ```
 
-![image-20240405213442123](http://pic.mewhz.com/blog/image-20240405213442123.png)
+![image-20240405213442123](https://pic.mewhz.com/blog/image-20240405213442123.png)
 
 使用 **get** 请求搜索文档，不提供请求数据，将返回部分文档。
 
@@ -385,7 +385,7 @@ get /student/_search
 }
 ```
 
-![image-20240405212232141](http://pic.mewhz.com/blog/image-20240405212232141.png)
+![image-20240405212232141](https://pic.mewhz.com/blog/image-20240405212232141.png)
 
 #### 6. 更新文档
 
@@ -401,7 +401,7 @@ post /student/_update/001
 }
 ```
 
-![image-20240405213838135](http://pic.mewhz.com/blog/image-20240405213838135.png)
+![image-20240405213838135](https://pic.mewhz.com/blog/image-20240405213838135.png)
 
 更新后的文档版本（_version）会 + 1。
 
@@ -460,7 +460,7 @@ get /student/_doc/001
 
 **以上的 7 种简单使用，除了使用 Kibana 中的开发工具外，还可以直接使用不同的请求方法和路径直接请求 127.0.0.1:9200**
 
-![image-20240405214614961](http://pic.mewhz.com/blog/image-20240405214614961.png)
+![image-20240405214614961](https://pic.mewhz.com/blog/image-20240405214614961.png)
 
 ### 六、SpringBoot 集成 ES
 
@@ -470,17 +470,17 @@ get /student/_doc/001
 
 Idea 中安装插件 **Elasticsearch** 可以快捷查看 ES 中的所有索引以及索引中的文档等信息。
 
-![image-20240405230235576](http://pic.mewhz.com/blog/image-20240405230235576.png)
+![image-20240405230235576](https://pic.mewhz.com/blog/image-20240405230235576.png)
 
 连接本地的 ES 保持默认配置即可。
 
-![image-20240405230326026](http://pic.mewhz.com/blog/image-20240405230326026.png)
+![image-20240405230326026](https://pic.mewhz.com/blog/image-20240405230326026.png)
 
 在右侧可以看到已连接 ES 中的全部索引以及文档等信息。
 
 创建 Spring Boot 项目，同时导入依赖：
 
-![image-20240406213509486](http://pic.mewhz.com/blog/image-20240406213509486.png)
+![image-20240406213509486](https://pic.mewhz.com/blog/image-20240406213509486.png)
 
 application.yml 文件配置 ES：
 

@@ -26,11 +26,11 @@ tags:
 
 文件 -> 项目结构；SDK -> 添加 JDK
 
-![image-20240311104901011](http://pic.mewhz.com/blog/image-20240311104901011.png)
+![image-20240311104901011](https://pic.mewhz.com/blog/image-20240311104901011.png)
 
 模块 -> 语言级别 -> 选择 8
 
-![image-20240311105015757](http://pic.mewhz.com/blog/image-20240311105015757.png)
+![image-20240311105015757](https://pic.mewhz.com/blog/image-20240311105015757.png)
 
 #### 依赖包源代码
 
@@ -49,7 +49,7 @@ tags:
 
 在侧栏的 Maven 选项中右键下载源代码。
 
-![image-20240311110734410](http://pic.mewhz.com/blog/image-20240311110734410.png)
+![image-20240311110734410](https://pic.mewhz.com/blog/image-20240311110734410.png)
 
 #### sun 包源代码
 
@@ -61,23 +61,23 @@ tags:
 
 选择第一个链接；并找到他的上一个版本，下载源码。
 
-![image-20240311144800117](http://pic.mewhz.com/blog/image-20240311144800117.png)
+![image-20240311144800117](https://pic.mewhz.com/blog/image-20240311144800117.png)
 
-![image-20240311144923524](http://pic.mewhz.com/blog/image-20240311144923524.png)
+![image-20240311144923524](https://pic.mewhz.com/blog/image-20240311144923524.png)
 
-![image-20240311144943497](http://pic.mewhz.com/blog/image-20240311144943497.png)
+![image-20240311144943497](https://pic.mewhz.com/blog/image-20240311144943497.png)
 
 下载并解压后，来到 Java 的安装目录解压根目录的 src.zip；
 
 在 OpenJDK 中复制 src -> share -> classes 的 sun 包到 Java 安装目录的 src 下：
 
-![image-20240311154741051](http://pic.mewhz.com/blog/image-20240311154741051.png)
+![image-20240311154741051](https://pic.mewhz.com/blog/image-20240311154741051.png)
 
 在 IDEA 中导入源代码：
 
 文件 -> 项目结构；SDK -> 源路径 -> ➕ -> 选择 Java 根目录的 src 文件夹
 
-![image-20240311154847653](http://pic.mewhz.com/blog/image-20240311154847653.png)
+![image-20240311154847653](https://pic.mewhz.com/blog/image-20240311154847653.png)
 
 ### CC1 攻击链分析
 
@@ -85,11 +85,11 @@ tags:
 
 根据 CC1 的特点来到 `Transformer` 接口；
 
-![image-20240311160344309](http://pic.mewhz.com/blog/image-20240311160344309.png)
+![image-20240311160344309](https://pic.mewhz.com/blog/image-20240311160344309.png)
 
 逐一查找它们的 `transform` 方法，最终确认 `InvokerTransformer` 类中的 `transform` 方法存在反射调用任意类的情况，也就是该链的尾部：命令执行。
 
-![image-20240311160707664](http://pic.mewhz.com/blog/image-20240311160707664.png)
+![image-20240311160707664](https://pic.mewhz.com/blog/image-20240311160707664.png)
 
 简单的反射调用弹出计算器，成功弹出；
 
@@ -147,7 +147,7 @@ public class Main {
 
 在 `transformer` 方法名，右键 -> 查找用法；
 
-![image-20240311165828057](http://pic.mewhz.com/blog/image-20240311165828057.png)
+![image-20240311165828057](https://pic.mewhz.com/blog/image-20240311165828057.png)
 
 寻找的过程中，主要看方法名不是 `transformer` 的调用，这样才能够形成一条完整的利用链，最后的目的是找到反序列化漏洞的入口：`readObject` 方法。
 
@@ -182,7 +182,7 @@ public static Map decorate(Map map, Transformer keyTransformer, Transformer valu
 
 继续**查找用法**寻找调用 `checkSetValue` 的方法；
 
-![image-20240311224744536](http://pic.mewhz.com/blog/image-20240311224744536.png)
+![image-20240311224744536](https://pic.mewhz.com/blog/image-20240311224744536.png)
 
 发现 `AbstractInputCheckedMapDecorator` 类的内部类 `MapEntry` 的 `setValue` 方法调用了 `checkSetValue`；而 `AbstractInputCheckedMapDecorator` 又是 `TransformedMap` 的父类：
 
@@ -207,13 +207,13 @@ static class MapEntry extends AbstractMapEntryDecorator {
 
 继续查找 `setValue` 通过哪些方法调用，选择 `setValue` 方法侧面的红色小箭头可以来到 `AbstractMapEntryDecorator` 类中的 `setValue` 方法；
 
-![image-20240311225602863](http://pic.mewhz.com/blog/image-20240311225602863.png)
+![image-20240311225602863](https://pic.mewhz.com/blog/image-20240311225602863.png)
 
 同理再一次选择红色小箭头可以来到 `Map` 的 `setValue` 方法。
 
-![image-20240311225616322](http://pic.mewhz.com/blog/image-20240311225616322.png)
+![image-20240311225616322](https://pic.mewhz.com/blog/image-20240311225616322.png)
 
-![image-20240311225707077](http://pic.mewhz.com/blog/image-20240311225707077.png)
+![image-20240311225707077](https://pic.mewhz.com/blog/image-20240311225707077.png)
 
 所以该方法实际上是给 Map 中的一组键值对(**Entry**)进行 `setValue` 操作。
 
@@ -389,7 +389,7 @@ public class Main {
 
 debug 调试发现 `memberType` 的值是 null，所以没有进入 if 语句；
 
-![image-20240312112719887](http://pic.mewhz.com/blog/image-20240312112719887.png)
+![image-20240312112719887](https://pic.mewhz.com/blog/image-20240312112719887.png)
 
 分析源码：
 
@@ -418,7 +418,7 @@ Object object = annotationInvocationHandlerConstructor.newInstance(Target.class,
 
 此时可以满足两个 if ，但 `setValue` 的值固定是 `new AnnotationTypeMismatchExceptionProxy`；
 
-![image-20240312114846306](http://pic.mewhz.com/blog/image-20240312114846306.png)
+![image-20240312114846306](https://pic.mewhz.com/blog/image-20240312114846306.png)
 
 不过 `setValue` -> `checkSetValue` 中会调用 `valueTransformer.transform()`；
 
@@ -520,11 +520,11 @@ public class TestDemo {
 
 涉及到的类中`Runtime` 没有实现 `java.io.Serializable` 接口；
 
-![image-20240312100339494](http://pic.mewhz.com/blog/image-20240312100339494.png)
+![image-20240312100339494](https://pic.mewhz.com/blog/image-20240312100339494.png)
 
  但是它的 `Class`可以序列化，`Class` 实现了 `java.io.Serializable` 接口
 
-![image-20240312151438524](http://pic.mewhz.com/blog/image-20240312151438524.png)
+![image-20240312151438524](https://pic.mewhz.com/blog/image-20240312151438524.png)
 
 使用普通反射获取 `Runtime` 实例对象并弹出计算器；
 
@@ -670,7 +670,7 @@ public class TestDemo {
 
 成功弹出计算器~
 
-![image-20240312161318823](http://pic.mewhz.com/blog/image-20240312161318823.png)
+![image-20240312161318823](https://pic.mewhz.com/blog/image-20240312161318823.png)
 
 **利用链**
 
