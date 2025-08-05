@@ -32,7 +32,7 @@ ES 是一款分布式、RESTful 风格的搜索和数据分析引擎，它可以
 >
 >添加 **-Xms1g** 和 **-Xmx1g**，分别设置 JVM 占用的内存最小和最大为 1GB。
 
-访问 http://127.0.0.1:9200/ 可看到 ES 默认的信息。
+访问 http://127.0.0.1:9200 可看到 ES 默认的信息。
 
 ![image-20240401111230797](https://pic.mewhz.com/blog/image-20240401111230797.png)
 
@@ -42,7 +42,7 @@ ES 是一款分布式、RESTful 风格的搜索和数据分析引擎，它可以
 >
 >修改：**xpack.security.enabled: false**，表示不启用安全认证
 >
->修改：**xpack.security.http.ssl:  enabled: false**，表示不启用 SSL 加密连接
+>修改：**xpack.security.http.ssl.enabled: false**，表示不启用 SSL 加密连接
 
 ### 二、安装 Kibana
 
@@ -64,7 +64,7 @@ Kibana 是 Elasticsearch 的可视化平台，需要先启动 Elasticsearch。
 >
 >修改：**i18n.locale: "zh-CN"**，表示设置国际化语言为中文简体。
 
-访问 http://localhost:5601/ 可以看到以下内容。
+访问 http://localhost:5601 可以看到以下内容。
 
 ![image-20240401103017879](https://pic.mewhz.com/blog/image-20240401103017879.png)
 
@@ -86,7 +86,7 @@ DSL 使用 JSON 格式来描述查询，其中包含各种参数和条件。
 
 #### 1. 简单测试
 
-打开 http://localhost:5601/ 中的 **左侧栏 -> Management -> 开发工具**。
+打开 http://localhost:5601 中的 **左侧栏 -> Management -> 开发工具**。
 
 >_analyze：是 Elasticsearch 提供的一个 API，它可以分析每个 text 是如何分词的；
 >
